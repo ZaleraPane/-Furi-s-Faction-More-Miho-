@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>Furi_Thought1</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Furi_Hediff1</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    
+        <stages><li>
+        <label>我是氷玥的符漓</label>
+        <description>我们符漓很强大，我感到自豪！</description>
+        <baseMoodEffect>10</baseMoodEffect>
+        </li></stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>Furi_Thought2</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Furi_Hediff2</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    
+        <stages><li>
+        <label>我是一名氷玥军人</label>
+        <description>我是一名光荣的军人，我愿为氷玥献出一切！</description>
+        <baseMoodEffect>20</baseMoodEffect>
+        </li></stages>
+    </ThoughtDef>
+
+</Defs>

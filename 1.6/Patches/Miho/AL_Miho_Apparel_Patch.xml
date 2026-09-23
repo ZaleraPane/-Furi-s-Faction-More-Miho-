@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Apparel_Mask_Eltex"]/equippedStatOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.4</AL_ShroudPotential>
+        <AL_CastShroudWarmUpFactor>-0.05</AL_CastShroudWarmUpFactor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Apparel_Under_EltexOne"]/equippedStatOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.4</AL_ShroudPotential>
+        <AL_CastShroudWarmUpFactor>-0.05</AL_CastShroudWarmUpFactor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Apparel_OnSkin_OrnatedOne"]/equippedStatOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.7</AL_ShroudPotential>
+        <AL_CastShroudWarmUpFactor>-0.1</AL_CastShroudWarmUpFactor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Apparel_Hat_Sorceress"]/equippedStatOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.7</AL_ShroudPotential>
+        <AL_CastShroudWarmUpFactor>-0.1</AL_CastShroudWarmUpFactor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Apparel_Shell_Sorceress"]/equippedStatOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.95</AL_ShroudPotential>
+        <AL_CastShroudWarmUpFactor>-0.2</AL_CastShroudWarmUpFactor>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Apparel_OnSkin_Celestial"]/equippedStatOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>1.45</AL_ShroudPotential>
+        <AL_CastShroudWarmUpFactor>-0.2</AL_CastShroudWarmUpFactor>
+    </value>
+  </Operation>
+
+</Patch>

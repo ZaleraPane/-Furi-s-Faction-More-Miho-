@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>Furi_TraderShip</defName>
+    <label>氷玥帝国海军综合贸易舰</label>
+    <commonality>0.4</commonality>
+    <orbital>true</orbital>
+    <faction>FR_Faction_KTP</faction>
+    
+    <stockGenerators>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>74000~100000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>1000~2000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>200~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>120~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>7000~10000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>2000~4000</countRange>
+      </li>
+      <li MayRequire="Ancot.MiliraRace" Class="StockGenerator_SingleDef">
+        <thingDef>Milira_SplendidSteel</thingDef>
+        <countRange>2000~4000</countRange>
+      </li>
+      <li MayRequire="Ancot.MiliraRace" Class="StockGenerator_SingleDef">
+        <thingDef>Milira_SunPlateSteel</thingDef>
+        <countRange>1200~2400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Uranium</thingDef>
+        <countRange>1200~2400</countRange>
+      </li>
+      <li MayRequire="Ancot.MiliraRace" Class="StockGenerator_SingleDef">
+        <thingDef>Milira_SolarCrystal</thingDef>
+        <countRange>240~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FR_Origin_Unit</thingDef>
+        <countRange>24000~40000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FR_Origin_Steel</thingDef>
+        <countRange>1200~2400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FR_Origin_RefinedSteel</thingDef>
+        <countRange>1000~2000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FR_Origin_AlloySteel</thingDef>
+        <countRange>700~1400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FR_Origin_Silk</thingDef>
+        <countRange>1200~2400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FR_Origin_EnchantSilk</thingDef>
+        <countRange>1200~2400</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>ShroudLevelThing</tradeTag>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>WoodLog</thingDef>
+        <countRange>2400~4000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>2000~2400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>400~1000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>4000~7000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>DevilstrandCloth</thingDef>
+        <countRange>1200~1700</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+        <countRange>100~140</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>ResourcesRaw</categoryDef>
+        <thingDefCountRange>4~7</thingDefCountRange>
+        <totalPriceRange>2400~4000</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <totalPriceRange>2400~4000</totalPriceRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+        </excludedThingDefs>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>9~10</thingDefCountRange>
+        <totalPriceRange>4000~8000</totalPriceRange>
+        <excludedCategories>
+          <li>EggsFertilized</li>
+        </excludedCategories>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodMeals</categoryDef>
+        <thingDefCountRange>7~10</thingDefCountRange>
+        <countRange>1000~1200</countRange>
+      </li>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Kibble</li>
+        </thingDefs>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chocolate</thingDef>
+        <countRange>1700~2000</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Milk</thingDef>
+        <countRange>1700~2000</countRange>
+      </li>
+
+      <li MayRequire="Ariandel.MiliraImperium" Class="StockGenerator_SingleDef">
+        <thingDef>MI_Thing_ShroudTea</thingDef>
+        <countRange>40~100</countRange>
+      </li>
+
+      <li Class="StockGenerator_Category">
+        <categoryDef>WeaponsMelee</categoryDef>
+        <thingDefCountRange>4~10</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>WeaponRanged</tradeTag>
+        <countRange>4~7</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Armor</tradeTag>
+        <countRange>7~10</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>MortarShell</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>20~40</countRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+        </excludedThingDefs>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>BuildingsFurniture</categoryDef>
+        <thingDefCountRange>4~7</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Art</tradeTag>
+        <countRange>4~7</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Television</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Telescope</thingDef>
+        <countRange>2~4</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>PsychicAmplifier</thingDef>
+        <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>NeurotrainersPsycast</categoryDef>
+        <thingDefCountRange>4~7</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>NeurotrainersSkill</categoryDef>
+        <thingDefCountRange>4~7</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Odyssey">
+        <thingDef>ShuttleEngine</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>10~12</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+
+      <li Class="StockGenerator_Techprints">
+        <countChances>
+          <li>
+            <count>7</count>
+            <chance>0.4</chance>
+          </li>
+          <li>
+            <count>12</count>
+            <chance>0.6</chance>
+          </li>
+        </countChances>
+      </li>
+
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>BasicClothing</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Clothing</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>WeaponRanged</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>WeaponsMelee</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MortarShell</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Armor</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>BuildingsFurniture</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Books</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ResourcesRaw</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Textiles</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Genepack</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>FoodRaw</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>FoodMeals</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>GravshipUpgrade</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>HoraxWeapon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shell_Deadlife</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>VoidSculpture</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Shard</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>Bioferrite</thingDef></li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly"><thingDef>RevenantSpine</thingDef></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

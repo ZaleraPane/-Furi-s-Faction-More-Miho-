@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation MayRequire="Ariandel.MiliraImperium" Class="PatchOperationReplace">
+        <xpath>/Defs/ManeuverDef[defName="OathSlash"]/verb/verbClass</xpath>
+        <value>
+            <verbClass>MiliraImperium.Verb_MeleeAttackDamage_Effecter_Hediff_Doom</verbClass>
+        </value>
+    </Operation>
+    
+</Patch>

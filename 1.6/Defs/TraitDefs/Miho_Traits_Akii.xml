@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 美狐交流特使 -->
+  <TraitDef>
+    <defName>Miho_Akii</defName>
+    <commonality>0.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>美狐 交流特使</label>
+        <description>来自异世界国家“氷玥”的使者</description>
+        <statOffsets>
+          <TradePriceImprovement>0.40</TradePriceImprovement>
+          <NegotiationAbility>0.40</NegotiationAbility>
+          <ConversionPower>4</ConversionPower>
+          <SocialImpact>0.40</SocialImpact>
+          <MoveSpeed>1.0</MoveSpeed>
+        </statOffsets>      
+        <statFactors>
+          <IncomingDamageFactor>0.7</IncomingDamageFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <modExtensions>
+      <li Class="AriandelLibrary.AL_NoSkillDecay_Extension"/>
+      <li Class="AriandelLibrary.AL_PsychicShockReflect_Extension" />
+      <li Class="AriandelLibrary.AL_IgnoreGenePenalty_Extension">
+        <skill>Social</skill>
+      </li>
+      <li Class="AriandelLibrary.AL_LockSkill_Extension">
+        <skill>Social</skill>
+        <level>20</level>
+        <preventDecay>true</preventDecay>
+      </li>
+    </modExtensions>
+  </TraitDef>
+
+</Defs>

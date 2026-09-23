@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- 德里芬 -->
+  <AL_Name_Deriven_First>德里芬</AL_Name_Deriven_First>
+  <!-- 希文 -->
+  <AL_Name_Deriven_Last>希文</AL_Name_Deriven_Last>
+  <!-- 称呼 -->
+  <AL_Name_Deriven_Nick>德里芬</AL_Name_Deriven_Nick>
+
+  <FRSpecialPawnDeriven.label>FR-KT-2 · 德里芬·希文</FRSpecialPawnDeriven.label>
+  <FRSpecialPawnDeriven.desc>德里芬是一名狐狐神教教会修女，同时也是一名军事女仆团的军医女仆。阴差阳错得到了氷玥符皇的钟爱，并在之后随“仙狐”舰群来到了边缘世界。</FRSpecialPawnDeriven.desc>
+
+</LanguageData>

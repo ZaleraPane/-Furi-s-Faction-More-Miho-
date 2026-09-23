@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>FR_OathSlash_KaZuk</defName>
+		<label>誓约之刃-神狐</label>
+        <techLevel>Archotech</techLevel>
+		<description>符皇的佩刀，神狐的本体。</description>
+		<uiIconPath>Things/Weapon/OathTail/Au0</uiIconPath>
+		<graphicData>
+			<texPath>Things/Weapon/OathTail/Au</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+        <weaponTags>
+	        <li>FR_Weapon_OathTail_Alpha</li>
+        </weaponTags>
+		<generateCommonality>0.00000001</generateCommonality>
+		<statBases>
+			<WorkToMake>5201314</WorkToMake>
+            <MarketValue>1314520</MarketValue>
+			<Mass>5.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+        <costList Inherit="False">
+            <FR_Origin_AlloySteel>13140</FR_Origin_AlloySteel>
+            <FR_Origin_EnchantSilk>5200</FR_Origin_EnchantSilk>
+			<MI_Thing_ShroudAsh MayRequire="Ariandel.MiliraImperium">140</MI_Thing_ShroudAsh>
+			<Milira_DarkMatter MayRequire="Ariandel.MiliraImperium">130</Milira_DarkMatter>
+            <Milira_PsionicCore MayRequire="Ariandel.MiliraImperium">50</Milira_PsionicCore>
+			<ComponentSpacer MayRequire="supermelee.sword">200</ComponentSpacer>
+			<Miho_Ebony_Mulberry MayRequire="supermelee.sword">5200</Miho_Ebony_Mulberry>
+			<Miho_CelestialScale MayRequire="supermelee.sword">13140</Miho_CelestialScale>
+			<Cumpilation_Cum MayRequire="vegapnk.cumpilation">5200</Cumpilation_Cum>
+        </costList>
+		
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>520</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>520</PsychicEntropyMax>
+            <MeleeCooldownFactor>-0.52</MeleeCooldownFactor>
+            <MeleeDamageFactor>+5.2</MeleeDamageFactor>
+			<MeleeHitChance>520</MeleeHitChance>
+            <AL_ShroudPotential>5.2</AL_ShroudPotential>
+		</equippedStatOffsets>
+        <tools>
+            <li>
+                <label>誓约之刃斩击</label>
+                <capacities>
+                    <li>OathSlash_Cut</li>
+                </capacities>
+                <power>520</power>
+                <armorPenetration>14</armorPenetration>
+                <cooldownTime>1.3</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5.2</amount>
+                        <chance>1.3</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>鞘击</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>520</power>
+                <armorPenetration>13</armorPenetration>
+                <cooldownTime>5.2</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5.2</amount>
+                        <chance>5.2</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+		<recipeMaker>
+            <researchPrerequisite>FR_OathSlash_Tech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+				<Artistic>20</Artistic>
+                <Intellectual>20</Intellectual>
+			</skillRequirements>
+            <recipeUsers Inherit="False"> 
+	            <li>Miho_CelestialForge</li>
+            </recipeUsers>
+        </recipeMaker>
+	    <comps>
+			<li>
+    			<compClass>CompEquippable</compClass>
+    		</li>
+    		<li>
+    			<compClass>CompQuality</compClass>
+    		</li>
+    		<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+        		<analysisID>52081314</analysisID>
+        		<requiresMechanitor>false</requiresMechanitor>
+        			<analysisDurationHours>1</analysisDurationHours>
+        			<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        			<completedLetterLabel>已理解{RESEARCH}。</completedLetterLabel>
+        			<completedLetter>通过分析神狐，{PAWN_labelShort}已理解其中的奥秘。</completedLetter>
+        			<completedLetterDef>PositiveEvent</completedLetterDef>
+					<activateTexPath>UI/Icons/Study</activateTexPath>
+        			<activateLabelString>逆向分析神狐</activateLabelString>
+        			<activateDescString>分析神狐以锻造誓约之刃</activateDescString>
+        			<jobString>逆向分析神狐</jobString>
+        			<guiLabelString>选择殖民者对神狐进行分析</guiLabelString>
+        			<inspectString>可被殖民者分析</inspectString>
+        			<targetingParameters>
+        			<canTargetBuildings>false</canTargetBuildings>
+        			<canTargetAnimals>false</canTargetAnimals>
+        			<canTargetMechs>false</canTargetMechs>
+        			<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        		</targetingParameters>
+    		</li>
+            <li Class="CompProperties_Art">
+                <nameMaker>Furi_OathSlash_KName</nameMaker>
+                <descriptionMaker>Furi_OathSlash_KDesc</descriptionMaker>
+                <minQualityForArtistic>Legendary</minQualityForArtistic>
+            </li>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.15,-1,0.05)</position>
+					<angle>315</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,1,0.35)</position>
+					<angle>-315</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.05,0.8,0.08)</position>
+					<angle>-125</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.05,-0.8,0.08)</position>
+					<angle>125</angle>
+				</westOffset>
+			</li>
+			<li Class="SYS.CompProperties_Sheath">		
+				<sheathOnlyGraphicData>
+					<texPath>Things/Weapon/OathTail/Au_Sheath</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+
+				</sheathOnlyGraphicData>
+				<fullGraphicData>
+					<texPath>Things/Weapon/OathTail/Au_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+				</fullGraphicData>
+				<drawPosition>Back</drawPosition>
+				<northOffset>
+					<position>(0,1,-0.12)</position>
+					<angle>200</angle>
+				</northOffset>
+				<southOffset>
+					<position>(0,-1,-0.11)</position>
+					<angle>40</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(-0.25,0.5,-0.08)</position>
+					<angle>20</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0.25,0.5,-0.08)</position>
+					<angle>-20</angle>
+				</westOffset>
+			</li>
+            <!--li Class="AriandelLibrary.CompProperties_UserRestriction">
+        		<rejectionKey>OathTail_OathSlash_WeaponRejected</rejectionKey>
+        		<allowedPawnKinds>
+          			<li>FR_TheOathTail_Alpha</li>
+                    <li>FR_TheOathTail_Beta</li>
+                    <li>FR_KT_Imperatofu</li>
+                    <li>FR_KT_Imperasofu</li>
+        		</allowedPawnKinds>
+      		</li-->
+			<li MayRequire="supermelee.sword" Class="SuperSword.CompProperties_SuperSword">
+        		<erosionMultiplier>0.52</erosionMultiplier>
+        		<whiteList>
+          			<li>FR_OathTail_Uniform</li>
+        		</whiteList>
+      		</li>
+		</comps>
+	</ThingDef>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>FR_OathSlash_SeZuk</defName>
+		<label>誓约之刃-仙狐</label>
+        <techLevel>Archotech</techLevel>
+		<description>符皇的佩刀，仙狐的本体。</description>
+		<uiIconPath>Things/Weapon/OathTail/Ag0</uiIconPath>
+		<graphicData>
+			<texPath>Things/Weapon/OathTail/Ag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+        <weaponTags>
+	        <li>FR_Weapon_OathTail_Beta</li>
+        </weaponTags>
+		<generateCommonality>0.00000001</generateCommonality>
+		<statBases>
+			<WorkToMake>5201314</WorkToMake>
+            <MarketValue>1314520</MarketValue>
+			<Mass>5.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+        <costList Inherit="False">
+            <FR_Origin_AlloySteel>13140</FR_Origin_AlloySteel>
+            <FR_Origin_EnchantSilk>5200</FR_Origin_EnchantSilk>
+			<MI_Thing_ShroudAsh MayRequire="Ariandel.MiliraImperium">140</MI_Thing_ShroudAsh>
+			<Milira_DarkMatter MayRequire="Ariandel.MiliraImperium">130</Milira_DarkMatter>
+            <Milira_PsionicCore MayRequire="Ariandel.MiliraImperium">50</Milira_PsionicCore>
+			<ComponentSpacer MayRequire="supermelee.sword">200</ComponentSpacer>
+			<Miho_Ebony_Mulberry MayRequire="supermelee.sword">5200</Miho_Ebony_Mulberry>
+			<Miho_CelestialScale MayRequire="supermelee.sword">13140</Miho_CelestialScale>
+			<Cumpilation_Cum MayRequire="vegapnk.cumpilation">5200</Cumpilation_Cum>
+        </costList>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>520</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>520</PsychicEntropyMax>
+            <MeleeCooldownFactor>-0.52</MeleeCooldownFactor>
+            <MeleeDamageFactor>+5.2</MeleeDamageFactor>
+			<MeleeHitChance>520</MeleeHitChance>
+			<AL_ShroudPotential>5.2</AL_ShroudPotential>
+		</equippedStatOffsets>
+        <tools>
+            <li>
+                <label>誓约之刃斩击</label>
+                <capacities>
+                    <li>OathSlash_Cut</li>
+                </capacities>
+                <power>520</power>
+                <armorPenetration>14</armorPenetration>
+                <cooldownTime>1.4</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5.2</amount>
+                        <chance>1.4</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>鞘击</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>520</power>
+                <armorPenetration>13</armorPenetration>
+                <cooldownTime>5.2</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5.2</amount>
+                        <chance>5.2</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+		<recipeMaker>
+            <researchPrerequisite>FR_OathSlash_Tech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+				<Artistic>20</Artistic>
+                <Intellectual>20</Intellectual>
+			</skillRequirements>
+            <recipeUsers Inherit="False"> 
+	            <li>Miho_CelestialForge</li>
+            </recipeUsers>
+        </recipeMaker>
+	    <comps>
+			<li>
+    			<compClass>CompEquippable</compClass>
+    		</li>
+    		<li>
+    			<compClass>CompQuality</compClass>
+    		</li>
+    		<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+        		<analysisID>52081314</analysisID>
+        		<requiresMechanitor>false</requiresMechanitor>
+        			<analysisDurationHours>1</analysisDurationHours>
+        			<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        			<completedLetterLabel>已理解{RESEARCH}。</completedLetterLabel>
+        			<completedLetter>通过分析仙狐，{PAWN_labelShort}已理解其中的奥秘。</completedLetter>
+        			<completedLetterDef>PositiveEvent</completedLetterDef>
+					<activateTexPath>UI/Icons/Study</activateTexPath>
+        			<activateLabelString>逆向分析仙狐</activateLabelString>
+        			<activateDescString>分析仙狐以锻造誓约之刃</activateDescString>
+        			<jobString>逆向分析</jobString>
+        			<guiLabelString>选择殖民者对仙狐进行分析</guiLabelString>
+        			<inspectString>可被殖民者分析</inspectString>
+        			<targetingParameters>
+        			<canTargetBuildings>false</canTargetBuildings>
+        			<canTargetAnimals>false</canTargetAnimals>
+        			<canTargetMechs>false</canTargetMechs>
+        			<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        		</targetingParameters>
+    		</li>
+            <li Class="CompProperties_Art">
+                <nameMaker>Furi_OathSlash_SName</nameMaker>
+                <descriptionMaker>Furi_OathSlash_SDesc</descriptionMaker>
+                <minQualityForArtistic>Legendary</minQualityForArtistic>
+            </li>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.15,-1,0.05)</position>
+					<angle>315</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,1,0.35)</position>
+					<angle>-315</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.05,0.8,0.08)</position>
+					<angle>-125</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.05,-0.8,0.08)</position>
+					<angle>125</angle>
+				</westOffset>
+			</li>
+			<li Class="SYS.CompProperties_Sheath">		
+				<sheathOnlyGraphicData>
+					<texPath>Things/Weapon/OathTail/Ag_Sheath</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+
+				</sheathOnlyGraphicData>
+				<fullGraphicData>
+					<texPath>Things/Weapon/OathTail/Ag_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+				</fullGraphicData>
+				<drawPosition>Back</drawPosition>
+				<northOffset>
+					<position>(0,1,-0.12)</position>
+					<angle>200</angle>
+				</northOffset>
+				<southOffset>
+					<position>(0,-1,-0.11)</position>
+					<angle>40</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(-0.25,0.5,-0.08)</position>
+					<angle>20</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0.25,0.5,-0.08)</position>
+					<angle>-20</angle>
+				</westOffset>
+			</li>
+            <!--li Class="AriandelLibrary.CompProperties_UserRestriction">
+        		<rejectionKey>OathTail_OathSlash_WeaponRejected</rejectionKey>
+        		<allowedPawnKinds>
+          			<li>FR_TheOathTail_Alpha</li>
+                    <li>FR_TheOathTail_Beta</li>
+                    <li>FR_KT_Imperatofu</li>
+                    <li>FR_KT_Imperasofu</li>
+        		</allowedPawnKinds>
+      		</li-->
+			<li MayRequire="supermelee.sword" Class="SuperSword.CompProperties_SuperSword">
+        		<erosionMultiplier>0.52</erosionMultiplier>
+        		<whiteList>
+          			<li>FR_OathTail_Uniform</li>
+        		</whiteList>
+      		</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>FR_OathSlash_Miho</defName>
+		<label>源导灵刃</label>
+        <techLevel>Archotech</techLevel>
+		<description>按照誓约之刃外观锻造的源导灵刃，可以通过刻印灵纹进行等离子打击。</description>
+		<uiIconPath>Things/Weapon/OathTail/Ag0</uiIconPath>
+		<graphicData>
+			<texPath>Things/Weapon/OathTail/Ag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+        <weaponTags>
+	        <li>FR_Weapon_OathTail_Miho</li>
+        </weaponTags>
+		<generateCommonality>0.00000001</generateCommonality>
+		<statBases>
+			<WorkToMake>131452</WorkToMake>
+            <MarketValue>51314</MarketValue>
+			<Mass>5.2</Mass>
+		</statBases>
+		<equippedAngleOffset>-35</equippedAngleOffset>
+        <costList Inherit="False">
+            <FR_Origin_AlloySteel>520</FR_Origin_AlloySteel>
+            <FR_Origin_EnchantSilk>520</FR_Origin_EnchantSilk>
+			<!--MI_Thing_ShroudAsh MayRequire="Ariandel.MiliraImperium">1</MI_Thing_ShroudAsh>
+			<Milira_DarkMatter MayRequire="Ariandel.MiliraImperium">10</Milira_DarkMatter>
+            <Milira_PsionicCore MayRequire="Ariandel.MiliraImperium">1</Milira_PsionicCore-->
+			<ComponentSpacer MayRequire="supermelee.sword">100</ComponentSpacer>
+			<Miho_Ebony_Mulberry MayRequire="supermelee.sword">100</Miho_Ebony_Mulberry>
+			<Miho_CelestialScale MayRequire="supermelee.sword">520</Miho_CelestialScale>
+        </costList>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>5.2</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>520</PsychicEntropyMax>
+            <MeleeCooldownFactor>-0.13</MeleeCooldownFactor>
+            <MeleeDamageFactor>+0.14</MeleeDamageFactor>
+			<MeleeHitChance>52</MeleeHitChance>
+			<AL_ShroudPotential>5.2</AL_ShroudPotential>
+		</equippedStatOffsets>
+        <tools>
+            <li>
+                <label>等离子斩击</label>
+                <capacities>
+                    <li>Miho_CutPlasma</li>
+                </capacities>
+                <power>52</power>
+                <armorPenetration>1.4</armorPenetration>
+                <cooldownTime>1.4</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>1.3</amount>
+                        <chance>0.13</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>鞘击</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>52</power>
+                <armorPenetration>0.52</armorPenetration>
+                <cooldownTime>5.2</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>1.4</amount>
+                        <chance>0.52</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+		<recipeMaker>
+            <researchPrerequisite>FR_OriginAlloySteel_Tech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+				<Artistic>10</Artistic>
+                <Intellectual>12</Intellectual>
+			</skillRequirements>
+            <recipeUsers Inherit="False"> 
+	            <li>Miho_CelestialForge</li>
+            </recipeUsers>
+        </recipeMaker>
+	    <comps>
+			<li>
+    			<compClass>CompEquippable</compClass>
+    		</li>
+    		<li>
+    			<compClass>CompQuality</compClass>
+    		</li>
+    		<li Class="CompProperties_Styleable"></li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="SYS.CompProperties_WeaponExtention">
+				<northOffset>
+					<position>(0.15,-1,0.05)</position>
+					<angle>315</angle>
+				</northOffset>
+				<southOffset>
+					<position>(-0.2,1,0.35)</position>
+					<angle>-315</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(0.05,0.8,0.08)</position>
+					<angle>-125</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(-0.05,-0.8,0.08)</position>
+					<angle>125</angle>
+				</westOffset>
+			</li>
+			<li Class="SYS.CompProperties_Sheath">		
+				<sheathOnlyGraphicData>
+					<texPath>Things/Weapon/OathTail/Ag_Sheath</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+
+				</sheathOnlyGraphicData>
+				<fullGraphicData>
+					<texPath>Things/Weapon/OathTail/Ag_Full</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+	                <shaderType>CutoutComplex</shaderType>
+				</fullGraphicData>
+				<drawPosition>Back</drawPosition>
+				<northOffset>
+					<position>(0,1,-0.12)</position>
+					<angle>200</angle>
+				</northOffset>
+				<southOffset>
+					<position>(0,-1,-0.11)</position>
+					<angle>40</angle>
+				</southOffset>
+				<eastOffset>
+					<position>(-0.25,0.5,-0.08)</position>
+					<angle>20</angle>
+				</eastOffset>
+				<westOffset>
+					<position>(0.25,0.5,-0.08)</position>
+					<angle>-20</angle>
+				</westOffset>
+			</li>
+			<li MayRequire="supermelee.sword" Class="SuperSword.CompProperties_SuperSword">
+        		<erosionMultiplier>0.2</erosionMultiplier>
+        		<whiteList>
+          			<li>FR_OathTail_Uniform</li>
+        		</whiteList>
+      		</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

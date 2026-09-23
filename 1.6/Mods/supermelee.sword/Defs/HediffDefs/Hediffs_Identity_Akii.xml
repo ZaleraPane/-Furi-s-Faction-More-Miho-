@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>FR_Identity_Akii</defName>
+    <label>ID: Akii</label>
+    <description>Internal marker for special pawn registration.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.5</initialSeverity>
+    <stages>
+        <li>
+            <becomeVisible>false</becomeVisible>
+        </li>
+    </stages>
+    
+    <comps>
+    <li Class="AriandelLibrary.HediffCompProperties_SpecialIdentity">
+      <staticID>Akii</staticID>
+      <requiredPawnKind>FRMiho_Akii</requiredPawnKind>
+    </li>
+  </comps>
+  </HediffDef>
+
+</Defs>

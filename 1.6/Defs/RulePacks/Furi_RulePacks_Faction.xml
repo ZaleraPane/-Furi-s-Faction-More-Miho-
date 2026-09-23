@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>Furi_Faction_FName</defName>
+    <rulePack>
+        <rulesStrings>
+            <li>r_name->[Furi_Faction_FName_K]</li>
+            <li>Furi_Faction_FName_K->氷玥国教庭</li>
+        </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_Faction_TName</defName>
+    <rulePack>
+        <rulesStrings>
+            <li>r_name->[Furi_Faction_TName_K]</li>
+            <li>Furi_Faction_TName_K->氷玥国教庭驻地</li>
+        </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_Faction_FNamePlayer</defName>
+    <rulePack>
+        <rulesStrings>
+            <li>r_name->[Furi_Faction_FNamePlayer_K]</li>
+            <li>Furi_Faction_FNamePlayer_K->氷玥帝国据点</li>
+        </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_Faction_TNamePlayer</defName>
+    <rulePack>
+        <rulesStrings>
+            <li>r_name->[Furi_Faction_TNamePlayer_K]</li>
+            <li>Furi_Faction_TNamePlayer_K->氷玥帝国据点</li>
+        </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_IdeoName</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+      <li>r_ideoName->氷玥国教</li>
+		  <li>r_ideoAdjective->帝国</li>
+		  <li>r_memberName->符漓</li>
+		  <li>creed(priority=1)-></li>
+		  <li>creed-></li>
+		  <li>genericCreed-></li>
+		  <li>hyphenPrefix-></li>
+		  <li>hyphenPrefix-></li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_LeaderTitleMaker</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_leaderTitle->执政</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>Furi_OathSlash_KName</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_art_name->誓约之刃-神狐</li>
+        <li>r_art_name(p=3)->誓约之刃-神狐</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_OathSlash_KDesc</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->神狐刃上的铭文像是宣誓着自己对主人的被所有权：神狐与主人符皇的情谊早已超过一般的主仆，并且双方均丝毫不掩饰对彼此的爱意。\n\n这一切自然也得到了符后的许可，不过嘛付出了什么样的代价好难猜啊。</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_OathSlash_SName</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_art_name->誓约之刃-仙狐</li>
+        <li>r_art_name(p=3)->誓约之刃-仙狐</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_OathSlash_SDesc</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>physical_description_root->仙狐刃上的铭文最初只有姐姐，现在还有主人以及女主人：仙狐并没有姐姐神狐那么能干，不过符后非常喜欢活泼可爱的仙狐，常常同两姐妹一起。\n\n至于主人在哪无狐在意，反正晚上上床总能见到的。</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

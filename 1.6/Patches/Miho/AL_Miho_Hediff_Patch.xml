@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Miho_PositiveFlower_Tea_High"]/stages/li/statOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.25</AL_ShroudPotential>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="Miho_Elegans_Hediff"]/stages/li[minSeverity="0.98"]/statOffsets</xpath>
+    <value>
+        <AL_ShroudPotential>0.4</AL_ShroudPotential>
+    </value>
+  </Operation>
+
+</Patch>

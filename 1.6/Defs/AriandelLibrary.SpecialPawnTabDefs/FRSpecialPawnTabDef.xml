@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <!-- 符漓的角色 -->
+  <AriandelLibrary.SpecialPawnTabDef>
+    <defName>FR_Character_Tab</defName>
+    <label>符漓的角色</label> 
+    <order>10</order>
+  </AriandelLibrary.SpecialPawnTabDef>
+
+</Defs>

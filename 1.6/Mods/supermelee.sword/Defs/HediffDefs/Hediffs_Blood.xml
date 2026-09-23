@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>FR_BloodMoon</defName>
+		<label>氷玥庇护</label>
+		<description>氷玥之辉的庇护。</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDamageFactor>-0.55</MeleeDamageFactor>
+            		<AL_ShroudPotential>1.2</AL_ShroudPotential>
+				</statOffsets>
+				<statFactors>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<MeleeDamageFactor>5</MeleeDamageFactor>
+					<Flammability>0</Flammability>
+				</statFactors>
+				<painFactor>0</painFactor>
+				<blocksMentalBreaks>true</blocksMentalBreaks>
+				<becomeVisible>true</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="SuperSword.HediffCompProperties_ErosionMultiplier">
+				<meleeMultiplier>4</meleeMultiplier>
+				<rangedMultiplier>4</rangedMultiplier>
+			</li>
+			<li Class="SuperSword.HediffCompProperties_FinalMoveSpeedClamp">
+				<minSpeed>5</minSpeed>
+				<maxSpeed>999</maxSpeed>
+			</li>
+			<li Class="SuperSword.HediffCompProperties_MentalStateImmunity">
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

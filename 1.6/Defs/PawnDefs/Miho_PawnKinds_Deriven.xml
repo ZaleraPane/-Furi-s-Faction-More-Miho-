@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Deriven 德里芬-->
+<PawnKindDef ParentName="MihoBase">
+  <defName>FRMiho_Deriven</defName>
+  <label>德里芬·希文</label>
+  <fixedGender>Female</fixedGender>
+  <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+  <combatPower>20</combatPower>
+  <itemQuality>Excellent</itemQuality>
+  <isFighter>true</isFighter>
+  <factionLeader>false</factionLeader>
+  <apparelMoney>
+    <min>999999</min>
+    <max>999999</max>
+  </apparelMoney>
+  <apparelTags>
+    <li>FR_Miho_SpecialMaid_Tag</li>
+  </apparelTags>
+  <apparelRequired>
+    <li>Miho_Apparel_Under_IndustrialStripe</li>
+    <li>Miho_Apparel_Special_Maid</li>
+    <li>FR_Miho_SpecialMaid</li>
+  </apparelRequired>
+  <weaponTags>
+    <li>FR_Weapon_Heal_Knife</li>
+  </weaponTags>
+  <weaponMoney>
+    <min>999999</min>
+    <max>999999</max>
+  </weaponMoney>
+  <gearHealthRange Inherit="False">
+    <min>1</min>
+    <max>1</max>
+  </gearHealthRange>
+  <forceNormalGearQuality>false</forceNormalGearQuality>
+  <minApparelQuality>Excellent</minApparelQuality>
+  <maxApparelQuality>Excellent</maxApparelQuality>
+  <backstoryFiltersOverride>
+    <li>
+      <categoriesChildhood>
+        <li>Miho_BackstoryChild_Deriven_Tag</li>
+      </categoriesChildhood>
+      <categoriesAdulthood>
+        <li>Miho_BackstoryAdult_Deriven_Tag</li>
+      </categoriesAdulthood>
+    </li>
+  </backstoryFiltersOverride>
+  <xenotypeSet>
+    <xenotypeChances>
+      <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">1</Xeno_CelestialMiho>
+      <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Arctic>
+      <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Highland>
+      <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Highmate>
+    </xenotypeChances>
+  </xenotypeSet>
+  <requiredWorkTags>
+    <li>Caring</li>
+  </requiredWorkTags>
+  <disallowedTraits>
+  </disallowedTraits>
+  <disallowedTraitsWithDegree>
+    <PsychicSensitivity>-2</PsychicSensitivity>
+  </disallowedTraitsWithDegree>
+  <forcedHairColor>(255,245,200)</forcedHairColor>
+  <abilities>
+    <li>Miho_Ability_Heal</li>
+  </abilities>
+  <modExtensions>
+    <li Class="AriandelLibrary.FixedIdentityExtension">
+    <firstNameKey>AL_Name_Deriven_First</firstNameKey>
+    <lastNameKey>AL_Name_Deriven_Last</lastNameKey>
+    <nickNameKey>AL_Name_Deriven_Nick</nickNameKey>
+    <childhoodBackstoryDef>Miho_BackstoryChild_Deriven_Tag</childhoodBackstoryDef>
+    <adulthoodBackstoryDef>Miho_BackstoryAdult_Deriven_Tag</adulthoodBackstoryDef>
+    <forcedAgeYears>23</forcedAgeYears>
+    <forcedChronologicalAgeYears>23</forcedChronologicalAgeYears>
+    <forcedHeadTypeDef>Head2</forcedHeadTypeDef>
+    <disableRandomTraits>true</disableRandomTraits>
+    <extraForcedTraits>
+      <li><def>Miho_Deriven</def></li>
+      <li>
+       <def>Beauty</def>
+       <degree>2</degree>
+      </li>
+      <li MayRequire="rjw.sexperience">
+       <def>Virgin</def>
+       <degree>2</degree>
+      </li>
+    </extraForcedTraits>
+    <extraForcedHediffs>
+      <li>
+        <def>PsychicAmplifier</def>
+        <severity>1</severity>
+        <partDef>Brain</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>0.5</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>4</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>FR_BloodMoon</def>
+      </li>
+      <li>
+        <def>FR_Identity_Deriven</def>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Breasts</def>
+        <severity>0.22</severity>
+        <partDef>Chest</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Vagina</def>
+        <severity>0.32</severity>
+        <partDef>Genitals</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Anus</def>
+        <severity>0.16</severity>
+        <partDef>Anus</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+    </extraForcedHediffs>
+    </li>
+    <li Class="AriandelLibrary.NPCKindTag">
+      <npcTag>Deriven</npcTag>
+    </li>
+    <li Class="AriandelLibrary.SpecialPawnExtension">
+      <uniqueID>Deriven</uniqueID>
+      <tabDef>FR_Character_Tab</tabDef>
+      <iconPathRecruited>FRSpecialCharacter/Icon/Deriven</iconPathRecruited>
+      <labelKey>FRSpecialPawnDeriven.label</labelKey>
+      <descKey>FRSpecialPawnDeriven.desc</descKey>
+      <normalCooldownTicks>30000</normalCooldownTicks>
+      <resurrectCooldownTicks>30000</resurrectCooldownTicks>
+      <order>4</order>
+      <authorizeCheckOnGeneration>true</authorizeCheckOnGeneration>
+    </li>
+    <li Class="AriandelLibrary.AL_Kill_Manager_Extension" />
+    <li Class="AriandelLibrary.AL_AzzyPregnancy_Extension">
+      <replaceWithKind>Miho_PlayerColonistBorn</replaceWithKind>
+    </li>
+    <li Class="AriandelLibrary.AL_TraitLock_Extension">
+      <requiredTraits>
+        <li>Miho_Deriven</li>
+      </requiredTraits>
+    </li>
+    <li Class="AriandelLibrary.Anomaly.AL_RitualRoleRestriction_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_ObeliskDuplicationBlocker_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.rjw.menstruation.AL_RJW_Menstruation_Pregnancy_Extension" MayRequire="rjw.menstruation"> 
+      <replaceWithKind>Miho_PlayerColonistBorn</replaceWithKind>
+    </li>
+  </modExtensions>
+</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 符皇 -->
+  <TraitDef>
+    <defName>Imperatofu</defName>
+    <commonality>0.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>符皇 符漓共主</label>
+        <description>符皇符皇，符漓之皇，全符漓公认的皇者，战至世界之巅的人，但仅在氷玥受到威胁时出手。</description>
+        <statOffsets>
+            <WorkSpeedGlobal>5.2</WorkSpeedGlobal>
+            <GlobalLearningFactor>2.7</GlobalLearningFactor>
+            <CarryingCapacity>+1314</CarryingCapacity>
+            <MeleeDodgeChance>520</MeleeDodgeChance>
+            <MoveSpeed>13.14</MoveSpeed>
+            <ConversionPower>1.314</ConversionPower>
+			      <PsychicEntropyMax>1314</PsychicEntropyMax>
+            <MechBandwidth>520</MechBandwidth>
+            <WorkSpeedGlobalOffsetMech MayRequire="ludeon.rimworld.biotech">5.2</WorkSpeedGlobalOffsetMech>
+            <StudyEfficiency MayRequire="ludeon.rimworld.anomaly">5.2</StudyEfficiency>
+            <EntityStudyRate MayRequire="ludeon.rimworld.anomaly">5.2</EntityStudyRate>
+        </statOffsets>
+        <statFactors>
+            <WorkSpeedGlobal>5.2</WorkSpeedGlobal>
+            <ReadingSpeed>2.7</ReadingSpeed>
+            <CaravanBonusSpeedFactor>13.14</CaravanBonusSpeedFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <modExtensions>
+      <li Class="AriandelLibrary.AL_NoSkillDecay_Extension"/>
+      <li Class="AriandelLibrary.AL_PsychicShockReflect_Extension" />
+      <li Class="AriandelLibrary.AL_IgnoreGenePenalty_Extension">
+        <skill>Melee</skill>
+      </li>
+      <li Class="AriandelLibrary.AL_LockSkill_Extension">
+        <skill>Melee</skill>
+        <level>52</level>
+        <preventDecay>true</preventDecay>
+      </li>
+    </modExtensions>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Imperasofu</defName>
+    <commonality>0.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>符后 母仪天下</label>
+        <description>符皇的妻子，身份地位在符漓心中等同甚至略高于符皇，行符皇职福泽万民，符漓心中永不动摇的主母。</description>
+        <statOffsets>
+            <WorkSpeedGlobal>5.2</WorkSpeedGlobal>
+            <GlobalLearningFactor>2.4</GlobalLearningFactor>
+            <CarryingCapacity>+1314</CarryingCapacity>
+            <MeleeDodgeChance>520</MeleeDodgeChance>
+            <MoveSpeed>5.20</MoveSpeed>
+			      <PsychicEntropyRecoveryRate>1314</PsychicEntropyRecoveryRate>
+            <ConversionPower>5.20</ConversionPower>
+            <StudyEfficiency MayRequire="ludeon.rimworld.anomaly">5.2</StudyEfficiency>
+            <EntityStudyRate MayRequire="ludeon.rimworld.anomaly">5.2</EntityStudyRate>
+        </statOffsets>
+        <statFactors>
+            <WorkSpeedGlobal>5.2</WorkSpeedGlobal>
+            <ReadingSpeed>2.7</ReadingSpeed>
+            <CaravanBonusSpeedFactor>13.14</CaravanBonusSpeedFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <modExtensions>
+      <li Class="AriandelLibrary.AL_NoSkillDecay_Extension"/>
+      <li Class="AriandelLibrary.AL_PsychicShockReflect_Extension" />
+      <li Class="AriandelLibrary.AL_IgnoreGenePenalty_Extension">
+        <skill>Melee</skill>
+      </li>
+      <li Class="AriandelLibrary.AL_LockSkill_Extension">
+        <skill>Melee</skill>
+        <level>52</level>
+        <preventDecay>true</preventDecay>
+      </li>
+    </modExtensions>
+  </TraitDef>
+
+</Defs>

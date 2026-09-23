@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[3]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_Deriven_Tag</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[4]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_Deriven_Tag</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[5]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_Deriven_Tag</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[6]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_Deriven_Tag</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+        <value>
+            <li>
+                <path>FRSpecialCharacter/SpecialMihoPawn/Hair/MihoHair_Deriven</path>
+                <inFrontOfBody>false</inFrontOfBody>
+                <layerInvert>false</layerInvert>
+                <colorChannel>hair</colorChannel>
+                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+                <offsets>
+                    <north>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+                        <offset>(0,0)</offset>
+                    </north>
+                    <south>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+                        <offset>(0,0)</offset>
+                    </south>
+                    <east>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,-0.001)</Thin>
+                            <Female>(0,-0.001)</Female>
+                            <Male>(0,-0.001)</Male>
+
+                            <Child>(0.03,0.041)</Child>
+                            <Baby>(0.03,0.041)</Baby>
+                        </bodyTypes>
+                        <offset>(0,0)</offset>
+                    </east>
+                </offsets>
+                <conditions>
+                    <Backstory>
+                        <backstory>Miho_BackstoryAdult_Deriven_Tag</backstory>
+                    </Backstory>
+                </conditions>
+            </li>
+        </value>
+    </Operation>
+    
+</Patch>

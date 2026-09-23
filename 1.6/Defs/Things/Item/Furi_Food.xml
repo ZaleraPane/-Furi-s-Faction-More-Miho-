@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealBase">
+		<defName>FR_Food_FoxCake</defName>
+		<label>狐饼</label>
+		<description>啥子糊糊？</description>
+		<graphicData>
+			<texPath>Things/Item/Food/FR_Food_FoxCake</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>70</MarketValue>
+			<Nutrition>2.4</Nutrition>
+			<WorkToMake>420</WorkToMake>
+			<Mass>0.7</Mass>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>FR_Hediff_FoxCake</hediffDef>
+					<severity>1.0</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+        			<need>MI_Need_Shroud</need> 
+        			<offset>1.0</offset>
+    			</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <RecipeDef>
+		<defName>FR_Make_FoxCake</defName>
+		<label>狐饼</label>
+		<description>烤狐饼。</description>
+		<jobString>正在烤狐饼……</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>420</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+        			<thingDefs>
+            			<li>FR_Origin_Unit</li>
+        			</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+				<li>PlantFoodRaw</li>
+			</categories>
+			<thingDefs>
+            	<li>FR_Origin_Unit</li>
+        	</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<FR_Food_FoxCake>1</FR_Food_FoxCake>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<skillRequirements>
+			<Cooking>9</Cooking>
+		</skillRequirements>
+		<recipeUsers>
+			<li>FueledStove</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+	</RecipeDef>
+
+
+    <HediffDef>
+		<defName>FR_Hediff_FoxCake</defName>
+		<label>享用狐饼</label>
+		<description>有狐饼！不是啥子糊糊！</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0.7,0.7)</defaultLabelColor>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>60000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+                    <WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+                	<AL_ShroudPotential>0.4</AL_ShroudPotential>
+				</statOffsets>
+				<hungerRateFactor>0.7</hungerRateFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+    <ThoughtDef>
+        <defName>Furi_Thought_FoxCake</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>FR_Hediff_FoxCake</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    
+        <stages><li>
+        <label>享用狐饼</label>
+        <description>窝布似啥子糊糊！</description>
+        <baseMoodEffect>10</baseMoodEffect>
+        </li></stages>
+    </ThoughtDef>
+
+</Defs>

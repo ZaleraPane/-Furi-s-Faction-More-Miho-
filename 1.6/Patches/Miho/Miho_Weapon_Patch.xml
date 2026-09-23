@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Weapon_RiflePlasma"]/weaponTags</xpath>
+    <value>
+      <li>FRWeapontag1</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Weapon_SniperPlasma"]/weaponTags</xpath>
+    <value>
+      <li>FRWeapontag2</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Weapon_ShotgunPsychic"]/weaponTags</xpath>
+    <value>
+      <li>FRWeapontag2</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Miho_Weapon_RiflePsychic"]/weaponTags</xpath>
+    <value>
+      <li>FRWeapontag3</li>
+    </value>
+  </Operation>
+
+</Patch>

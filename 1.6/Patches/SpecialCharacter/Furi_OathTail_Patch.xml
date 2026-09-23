@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Miho"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[path="Miho/Addon/HairBack/HairBack"]/conditions</xpath>
+      <value>
+        <Apparel>
+          <hiddenUnderApparelTag>
+            <li>MihoHairBack</li>
+          </hiddenUnderApparelTag>
+        </Apparel>
+      </value>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Miho"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[path="Miho/Addon/HairBack/HairBack"]/conditions</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Miho"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[path="Miho/Addon/HairBack/HairBack"]</xpath>
+            <value>
+                <conditions/>
+            </value>
+        </nomatch>
+    </Operation>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Miho"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[path="Miho/Addon/Hair/Hair"]/conditions</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Miho"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[path="Miho/Addon/Hair/Hair"]</xpath>
+            <value>
+                <conditions/>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[3]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Alpha</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[4]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Alpha</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[5]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Alpha</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[6]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Alpha</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+        <value>
+            <li>
+                <path>FRSpecialCharacter/SpecialMihoPawn/Hair/MihoHair_OathTail_Alpha</path>
+                <inFrontOfBody>false</inFrontOfBody>
+                <layerInvert>false</layerInvert>
+                <colorChannel>hair</colorChannel>
+                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+                <offsets>
+                    <north>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </north>
+                    <south>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </south>
+                    <east>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,-0.001)</Thin>
+                            <Female>(0,-0.001)</Female>
+                            <Male>(0,-0.001)</Male>
+
+                            <Child>(0.03,0.041)</Child>
+                            <Baby>(0.03,0.041)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </east>
+                </offsets>
+                <conditions>
+                    <Backstory>
+                        <backstory>Miho_BackstoryAdult_OathTail_Alpha</backstory>
+                    </Backstory>
+                </conditions>
+            </li>
+            <!--li>
+                <path>FRSpecialCharacter/SpecialMihoPawn/HairBack/MihoHairBack_OathTail_Alpha</path>
+                <inFrontOfBody>false</inFrontOfBody>
+                <layerInvert>false</layerInvert>
+                <colorChannel>hair</colorChannel>
+                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+                <offsets>
+                    <north>
+                        <layerOffset>-0.77</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </north>
+                    <south>
+                        <layerOffset>-0.3</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </south>
+                    <east>
+                        <layerOffset>-1</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0.03,0.041)</Child>
+                            <Baby>(0.03,0.041)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </east>
+                    <west>
+                        <layerOffset>-1</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(-0.03,0.065)</Child>
+                            <Baby>(-0.03,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </west>
+                </offsets>
+                <conditions>
+                    <Backstory>
+                        <backstory>Miho_BackstoryAdult_OathTail_Alpha</backstory>
+                    </Backstory>
+                </conditions>
+            </li-->
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[3]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Beta</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[4]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Beta</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[5]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Beta</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[6]/conditions</xpath>
+        <value>
+            <Not>
+                <Backstory>
+                    <backstory>Miho_BackstoryAdult_OathTail_Beta</backstory>
+                </Backstory>
+            </Not>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName='Alien_Miho']/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+        <value>
+            <li>
+                <path>FRSpecialCharacter/SpecialMihoPawn/Hair/MihoHair_OathTail_Beta</path>
+                <inFrontOfBody>false</inFrontOfBody>
+                <layerInvert>false</layerInvert>
+                <colorChannel>hair</colorChannel>
+                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+                <offsets>
+                    <north>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+                        <offset>(0,0)</offset>
+                    </north>
+                    <south>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+                        <offset>(0,0)</offset>
+                    </south>
+                    <east>
+                        <layerOffset>-0.326</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,-0.001)</Thin>
+                            <Female>(0,-0.001)</Female>
+                            <Male>(0,-0.001)</Male>
+
+                            <Child>(0.03,0.041)</Child>
+                            <Baby>(0.03,0.041)</Baby>
+                        </bodyTypes>
+                        <offset>(0,0)</offset>
+                    </east>
+                </offsets>
+                <conditions>
+                    <Backstory>
+                        <backstory>Miho_BackstoryAdult_OathTail_Beta</backstory>
+                    </Backstory>
+                </conditions>
+            </li>
+            <!--li>
+                <path>FRSpecialCharacter/SpecialMihoPawn/HairBack/MihoHairBack_OathTail_Beta</path>
+                <inFrontOfBody>false</inFrontOfBody>
+                <layerInvert>false</layerInvert>
+                <colorChannel>hair</colorChannel>
+                <scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+                <shaderType>Cutout</shaderType>
+                <alignWithHead>true</alignWithHead>
+                <angle>0</angle>
+                <offsets>
+                    <north>
+                        <layerOffset>-0.77</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </north>
+                    <south>
+                        <layerOffset>-0.3</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0,0.065)</Child>
+                            <Baby>(0,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </south>
+                    <east>
+                        <layerOffset>-1</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(0.03,0.041)</Child>
+                            <Baby>(0.03,0.041)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </east>
+                    <west>
+                        <layerOffset>-1</layerOffset>
+                        <bodyTypes>
+                            <Thin>(0,0)</Thin>
+                            <Female>(0,0)</Female>
+                            <Male>(0,0)</Male>
+
+                            <Child>(-0.03,0.065)</Child>
+                            <Baby>(-0.03,0.065)</Baby>
+                        </bodyTypes>
+				        <offset>(0,0)</offset>
+                    </west>
+                </offsets>
+                <conditions>
+                    <Backstory>
+                        <backstory>Miho_BackstoryAdult_OathTail_Beta</backstory>
+                    </Backstory>
+                </conditions>
+            </li-->
+        </value>
+    </Operation>
+
+</Patch>

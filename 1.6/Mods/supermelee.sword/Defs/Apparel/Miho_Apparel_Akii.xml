@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BloodClothBase">
+    	<defName>FR_BloodCloth_Akii</defName>
+    	<label>血衣·改（氷玥）</label>
+    	<description>为氷玥派往神殿的工作人员特制的血衣。\n\n（生命维持上限150→200，每秒最多降低生命维持容量50→40，自然恢复降低2→1，击杀恢复提高15→20）</description>
+    	<graphicData>
+      		<drawSize>1.5</drawSize> 
+    		<texPath>Apparel/Robe/RobeAu/RobeAu</texPath>
+    	</graphicData>
+		<equippedStatOffsets>
+            <AL_ShroudPotential>1.2</AL_ShroudPotential>
+		</equippedStatOffsets>
+    	<apparel>
+      		<tags>
+				<li>Furi_Miho_BloodApparel</li>
+			</tags>
+    		<wornGraphicPath>Apparel/Robe/RobeAu/RobeAu</wornGraphicPath>
+    	</apparel>
+    	<recipeMaker>
+			<researchPrerequisite>Miho_ApparelEltex</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+    	<costList>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Miho_Ebony_SilkCloth>200</Miho_Ebony_SilkCloth>
+			<Miho_Ebony_Mulberry>20</Miho_Ebony_Mulberry>
+      		<Miho_CelestialScale>150</Miho_CelestialScale>
+		</costList>
+    	<comps Inherit="False">
+    		<li Class="CompProperties_Forbiddable" />
+    		<li Class="SuperSword.CompProperties_BloodCloth" />
+    		<li Class="SuperSword.CompProperties_ApparelLifeSupport">
+        		<capacity>200</capacity>
+        		<maxDrainPerSecond>40</maxDrainPerSecond>
+        		<recoveryPerSecond>1</recoveryPerSecond>
+        		<breakCooldownTicks>3600</breakCooldownTicks>
+        		<killRestoreAmount>20</killRestoreAmount>
+    		</li>
+    	</comps>
+	</ThingDef>
+	<ThingDef ParentName="BloodClothBase">
+		<defName>MCW_Uniform_Akii</defName>
+		<label>神殿制服（氷玥）</label>
+		<description>为氷玥派往神殿的工作人员特制的制服。\n\n（不是啥子糊糊，提供学习和工作加成。每秒最多降低生命维持容量50→55）</description>
+		<graphicData>
+			<drawSize>1.5</drawSize>
+			<texPath>Apparel/Uniform/Uniform</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<GlobalLearningFactor>0.4</GlobalLearningFactor>
+			<WorkSpeedGlobal>0.4</WorkSpeedGlobal>
+            <AL_ShroudPotential>2.4</AL_ShroudPotential>
+		</equippedStatOffsets>
+		<apparel>
+			<tags>
+				<li>Furi_Miho_BloodApparel</li>
+			</tags>
+			<wornGraphicPath>Apparel/Uniform/Uniform</wornGraphicPath>
+		</apparel>
+    	<recipeMaker>
+			<researchPrerequisite>Miho_ApparelEltex</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+    	<costList>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Miho_Ebony_SilkCloth>200</Miho_Ebony_SilkCloth>
+			<Miho_Ebony_Mulberry>20</Miho_Ebony_Mulberry>
+      		<Miho_CelestialScale>150</Miho_CelestialScale>
+		</costList>
+		<comps Inherit="False">
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="SuperSword.CompProperties_BloodCloth" />
+			<li Class="SuperSword.CompProperties_ApparelLifeSupport">
+				<capacity>150</capacity>
+				<maxDrainPerSecond>55</maxDrainPerSecond>
+				<recoveryPerSecond>2</recoveryPerSecond>
+				<breakCooldownTicks>3600</breakCooldownTicks>
+				<killRestoreAmount>15</killRestoreAmount>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Imperatofu  -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>Miho_BackstoryChild_Imperatofu</defName>
+		<title>符皇 神本无名</title>
+		<titleShort>革命领袖</titleShort>
+		<description>[PAWN_nameDef]来历未知实力受限，毫无信念游荡世间，随着革命战争爆发，受前领袖邀请加入才登上历史舞台。革命军被盟友背刺，领袖战死战事僵持，他成为新一任领军人，领导突围后驻扎于符山漓水积蓄力量，并最终带领革命军获胜。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>20</Shooting>
+			<Melee>20</Melee>
+			<Construction>14</Construction>
+			<Cooking>13</Cooking>
+			<Animals>13</Animals>
+            <Plants>13</Plants>
+			<Artistic>13</Artistic>
+			<Crafting>14</Crafting>
+			<Medicine>13</Medicine>
+			<Mining>13</Mining>
+			<Social>13</Social>
+			<Intellectual>14</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Miho_BackstoryChild_Imperatofu</li>
+		</spawnCategories>
+		<workDisables>
+		</workDisables>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Miho_BackstoryAdult_Imperatofu</defName>
+		<title>符皇 神以吾名</title>
+		<titleShort>氷玥符皇</titleShort>
+		<description>[PAWN_nameDef]带领革命军凯旋后在据点建立起最初的氷玥议会并开始隐居，全体军民自此以符漓自称。周围国家组建联盟以针对氷玥，护国战争老战友共同请愿他出山，此时已解除部分限制的他再次带领军队碾碎了敌人，自此符漓开始尊他为皇。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>20</Shooting>
+			<Melee>20</Melee>
+			<Construction>17</Construction>
+			<Cooking>14</Cooking>
+			<Animals>13</Animals>
+            <Plants>13</Plants>
+			<Artistic>13</Artistic>
+			<Crafting>17</Crafting>
+			<Medicine>14</Medicine>
+			<Mining>13</Mining>
+			<Social>13</Social>
+			<Intellectual>20</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Miho_BackstoryAdult_Imperatofu</li>
+		</spawnCategories>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Jealous</defName>
+			</li>
+		</disallowedTraitsChance>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Miho_BackstoryChild_Imperasofu</defName>
+		<title>符后 军中旧识</title>
+		<titleShort>革命近卫</titleShort>
+		<description>[PAWN_nameDef]来历未知，擅长近战与远程法术，是革命军最强的近战法师，凭借近乎全才的智慧成为革命军的另一头部人物。长久接触中对实力强大的血月心生仰慕，双方情谊逐渐超越普通战友，并约定待战事结束便一同退隐。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>17</Shooting>
+			<Melee>17</Melee>
+			<Construction>14</Construction>
+			<Cooking>14</Cooking>
+			<Animals>13</Animals>
+            <Plants>13</Plants>
+			<Artistic>14</Artistic>
+			<Crafting>14</Crafting>
+			<Medicine>14</Medicine>
+			<Mining>13</Mining>
+			<Social>14</Social>
+			<Intellectual>17</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Miho_BackstoryChild_Imperasofu</li>
+		</spawnCategories>
+		<workDisables>
+		</workDisables>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Female</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>Miho_BackstoryAdult_Imperasofu</defName>
+		<title>符后 共冕之皇</title>
+		<titleShort>氷玥符后</titleShort>
+		<description>[PAWN_nameDef]随血月出山后，仅一人便撑起了整个氷玥的事务，军事民生外务与内政无一纰漏，下属闲到无事可做，同时还帮血月分担了另一条战线。行符皇职，受万民敬仰，血月的贤内助，氷玥的共冕之皇，帝国最权威之狐。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>14</Shooting>
+			<Melee>14</Melee>
+			<Construction>17</Construction>
+			<Cooking>17</Cooking>
+			<Animals>13</Animals>
+            <Plants>13</Plants>
+			<Artistic>20</Artistic>
+			<Crafting>17</Crafting>
+			<Medicine>20</Medicine>
+			<Mining>13</Mining>
+			<Social>20</Social>
+			<Intellectual>20</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>Miho_BackstoryAdult_Imperasofu</li>
+		</spawnCategories>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Jealous</defName>
+			</li>
+		</disallowedTraitsChance>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Female</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

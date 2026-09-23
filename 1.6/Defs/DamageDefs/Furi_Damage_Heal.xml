@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef ParentName="CutBase">
+    <defName>Heal_Cut</defName>
+    <label>“手术”伤</label>
+    <workerClass>DamageWorker_Cut</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0}死于手术失败。</deathMessage>
+    <hediff>HealCut</hediff>
+    <hediffSkin>HealCut</hediffSkin>
+    <hediffSolid>HealCut</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0.3, 0.5</li>
+        <li>0.6, 1</li>
+        <li>0.9, 1.5</li>
+        <li>1, 2</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <additionalHediffs>
+      <li>
+        <hediff>HealCut_Hediff</hediff>
+        <severityPerDamageDealt>0.5</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    <cutCleaveBonus>1</cutCleaveBonus>
+  </DamageDef>
+
+  <ManeuverDef>
+    <defName>HealSlash</defName>
+    <requiredCapacity>Heal_Cut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Heal_Cut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>HealCut</defName>
+    <label>“手术”痕迹</label>
+    <labelNoun>一处“手术”痕迹</labelNoun>
+    <description>一处因“手术”留下的痕迹。</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.1</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>永久性“手术”痕迹</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.01</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.005</averagePainPerSeverityPermanent>
+      <bleedRate>0.04</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>“手术”损坏</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>HealCut_Hediff</defName>
+    <label>“手术”治愈</label>
+    <description>妙手回春啊大夫！</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(135,205,85)</defaultLabelColor>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <regeneration>12</regeneration>
+        <painFactor>0.2</painFactor>
+        <hungerRateFactor>1.4</hungerRateFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <capMods>
+          <li><capacity>Consciousness</capacity><setMax>0.4</setMax></li>
+        </capMods>
+        <statFactors>
+            <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+            <InjuryHealingFactor>1.2</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+            <RestFallRateFactor>+0.4</RestFallRateFactor>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <regeneration>12</regeneration>
+        <painFactor>0.2</painFactor>
+        <hungerRateFactor>1.4</hungerRateFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <capMods>
+          <li><capacity>Consciousness</capacity><setMax>0.4</setMax></li>
+        </capMods>
+        <statFactors>
+            <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+            <InjuryHealingFactor>1.2</InjuryHealingFactor>
+        </statFactors>
+        <statOffsets>
+            <RestFallRateFactor>+0.4</RestFallRateFactor>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ToolCapacityDef>
+    <defName>Heal_Cut</defName>
+    <label>“手术”切割</label>
+  </ToolCapacityDef>
+
+</Defs>

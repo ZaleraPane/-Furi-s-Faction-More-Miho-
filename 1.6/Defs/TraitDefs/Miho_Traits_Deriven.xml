@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 美狐 虔诚修女 -->
+  <TraitDef>
+    <defName>Miho_Deriven</defName>
+    <commonality>0.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>美狐 虔诚修女</label>
+        <description>狐狐神教教会的修女，狐狐女仆团的女仆</description>
+        <statOffsets>
+          <NegotiationAbility>0.4</NegotiationAbility>
+          <ConversionPower>4</ConversionPower>
+          <SocialImpact>0.2</SocialImpact>
+          <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.1</CertaintyLossFactor>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <modExtensions>
+      <li Class="AriandelLibrary.AL_NoSkillDecay_Extension"/>
+      <li Class="AriandelLibrary.AL_PsychicShockReflect_Extension" />
+      <li Class="AriandelLibrary.AL_IgnoreGenePenalty_Extension">
+        <skill>Medicine</skill>
+      </li>
+      <li Class="AriandelLibrary.AL_LockSkill_Extension">
+        <skill>Medicine</skill>
+        <level>20</level>
+        <preventDecay>true</preventDecay>
+      </li>
+    </modExtensions>
+  </TraitDef>
+
+</Defs>

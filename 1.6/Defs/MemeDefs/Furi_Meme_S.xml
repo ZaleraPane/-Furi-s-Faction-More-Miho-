@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoStoryPatternDef>
+    <defName>FR_Faction_Cult</defName>
+    <segments>
+        <li>setup</li>
+        <li>episode</li>
+        <li>conflict</li>
+        <li>victory</li>
+    </segments>
+    <rules>
+      <rulesStrings>
+        <li>setup->氷玥国教最初是[founderName]在[place_name]的一些信仰符皇的民间团体。</li>
+        <li>episode->后形成组织化的宗教，被正式立为氷玥的国教。</li>
+        <li>conflict->那曾被驱逐的[foeLeader]仍试图进犯氷玥，多次命[foeSoldiers]骚扰氷玥的边境。</li>
+        <li>victory->[founderName]最终全歼了[foeLeader]的[foeSoldiers]并将他的势力全都赶下了海。</li>
+
+        <li>foeLeader->非法组织</li>
+        <li>foeSoldiers->杂牌军队</li>
+        <li>place_foeLeader->[foeLeader]</li>
+        <li>place_foeSoldiers->[foeSoldiers]</li>
+        <li>founderName->符漓</li>
+        <li>place_name->氷都</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+
+  <RulePackDef>
+    <defName>Furi_GlobalMissingRules</defName>
+    <rulePack>
+        <rulesStrings>
+            <li>foeLeader->非法组织</li>
+            <li>foeSoldiers->杂牌军队</li>
+            <li>place_foeLeader->[foeLeader]</li>
+            <li>place_foeSoldiers->[foeSoldiers]</li>
+            <li>founderName->符漓</li>
+            <li>place_name->氷都</li>
+        </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <IdeoIconDef>
+    <defName>FR_IdeoIcon</defName>
+    <iconPath>Faction/Furi_FactionIcon</iconPath>
+    <memes>
+      <li>Furi_Meme_C</li>
+      <li>Furi_Meme_S</li>
+    </memes>
+    <cultures>
+      <li>Furi_Culture</li>
+    </cultures>
+  </IdeoIconDef>
+
+  <MemeDef>
+    <defName>Furi_Meme_S</defName>
+    <label>氷玥国教</label>
+    <description>氷玥国教是符漓自发的宗教，信仰的对象正是符皇。</description>
+    <category>Structure</category>
+    <iconPath>Faction/Furi_FactionIcon</iconPath>
+    <deityNameMakerOverride>Furi_DeityName</deityNameMakerOverride>
+    <deityTypeMakerOverride>Furi_DeityType</deityTypeMakerOverride>
+    <impact>0</impact>
+    <worshipRoomLabel>圣殿</worshipRoomLabel>
+    <deityCount>1</deityCount>
+    <symbolPackOverride>true</symbolPackOverride>
+
+    <generalRules>
+      <rulesStrings>
+
+        <li>memeLeaderNoun->执政</li>
+
+        <li>memeMoralist->主教</li>
+
+        <li>foeLeader->非法组织</li>
+        <li>foeSoldiers->杂牌军队</li>
+        <li>place_foeLeader->[foeLeader]</li>
+        <li>place_foeSoldiers->[foeSoldiers]</li>
+        <li>founderName->符漓</li>
+        <li>place_name->氷都</li>
+
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <li>setup(tag=meme_Furi_Meme_S)->氷玥国教最初是[founderName]在[place_name]的一些信仰符皇的民间团体。</li>
+          <li>episode(tag=meme_Furi_Meme_S)->后形成组织化的宗教，被正式立为氷玥的国教。</li>
+          <li>conflict(tag=meme_Furi_Meme_S)->那曾被驱逐的[foeLeader]仍试图进犯氷玥，多次命[foeSoldiers]骚扰氷玥的边境。</li>
+          <li>victory(tag=meme_Furi_Meme_S)->[founderName]最终全歼了[foeLeader]的[foeSoldiers]并将他的势力全都赶下了海。</li>
+        </rulesStrings>
+      </rules>
+      <patterns>
+        <li>
+          <def>FR_Faction_Cult</def>
+        </li>
+      </patterns>
+      <constants>
+        <li>
+          <key>Furi_Meme_S</key>
+          <value>true</value>
+        </li>
+
+        <li>
+          <key>structure_archist</key>
+          <value>false</value>
+        </li>
+        <li>
+          <key>structure_animist</key>
+          <value>false</value>
+        </li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li><ideoName>氷玥国教</ideoName><theme>帝国</theme><adjective>帝国</adjective><member>符漓</member></li>
+    </symbolPacks>
+  </MemeDef>
+
+  <RulePackDef>
+    <defName>Furi_DeityName</defName>
+    <include>
+      <li>GlobalUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName(p=3)->符皇</li>
+        <li>r_deityName->符皇</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>Furi_DeityType</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->氷幕·血月</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- 秋楪 -->
+  <AL_Name_Akii_First>秋楪</AL_Name_Akii_First>
+  <!-- 芊霜 -->
+  <AL_Name_Akii_Last>芊霜</AL_Name_Akii_Last>
+  <!-- 称呼 -->
+  <AL_Name_Akii_Nick>秋楪</AL_Name_Akii_Nick>
+
+  <FRSpecialPawnAkii.label>FR-KT-1 · 芊霜·秋楪</FRSpecialPawnAkii.label>
+  <FRSpecialPawnAkii.desc>氷玥派遣至神殿的交流特使，幻化成美狐的模样来到了边缘世界。</FRSpecialPawnAkii.desc>
+
+  <MCW_BloodMiho.label>MCW-0 · 厖朝雯</MCW_BloodMiho.label>
+  <MCW_BloodMiho.desc>负责处理整个神殿所有高层的升迁，自然历来非常忙碌，也因此拥有了非凡的智识和非凡的能力。据说，事务官总是会深入基层，参与各种建设工作，哪怕是做饭也不例外。\n\n要知道，神殿有那么多高层——惩诛殿殿主，教皇，圣女，事务官，执殿使，圣殿骑士，加起来一共3只美狐，两只鼠鼠和一个人类\n\n——一只爪爪都数不过来。</MCW_BloodMiho.desc>
+
+</LanguageData>

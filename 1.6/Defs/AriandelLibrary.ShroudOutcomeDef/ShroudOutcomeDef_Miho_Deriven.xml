@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AriandelLibrary.ShroudOutcomeDef>
+    <defName>AL_Outcome_Join_Deriven</defName>
+    <label>Deriven arrived</label>
+    <description>{0} has returned.</description>
+    <workerClass>AriandelLibrary.ShroudOutcome_Generator</workerClass>
+    <letterMode>PositiveEvent</letterMode>
+    <qualityRange>0.0~1.0</qualityRange>
+    <weight>999999</weight>
+    <isBadOutcome>false</isBadOutcome>
+    <isUnique>true</isUnique>
+    <minRefireDays>0</minRefireDays>
+
+    <pawnList>
+      <li>
+        <pawnkindDefName>FRMiho_Deriven</pawnkindDefName>
+        <probability>1</probability>
+        <independentProbability>true</independentProbability>
+        <shouldBeRegistered>true</shouldBeRegistered>
+        
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>Oh，看呐是我们可爱的德里芬小姐。</pawnDescription>
+        
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+    </pawnList>
+
+    <comps>
+    </comps>
+  </AriandelLibrary.ShroudOutcomeDef>
+
+</Defs>

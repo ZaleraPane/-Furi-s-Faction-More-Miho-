@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef ParentName="MihoBase">
+  <defName>FR_TheOathTail_Alpha</defName>
+  <label>御狐-神狐</label>
+  <fixedGender>Female</fixedGender>
+  <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+  <combatPower>20000</combatPower>
+  <itemQuality>Legendary</itemQuality>
+  <isFighter>true</isFighter>
+  <factionLeader>false</factionLeader>
+  <apparelMoney>
+    <min>99999999</min>
+    <max>99999999</max>
+  </apparelMoney>
+  <apparelTags>
+    <li>FR_Apparel_OathTail_Tag</li>
+  </apparelTags>
+  <apparelRequired>
+    <li>FR_OathTail_Uniform</li>
+  </apparelRequired>
+  <weaponTags>
+    <li>FR_Weapon_OathTail_Alpha</li>
+  </weaponTags>
+  <weaponMoney>
+    <min>99999999</min>
+    <max>99999999</max>
+  </weaponMoney>
+  <gearHealthRange Inherit="False">
+	  <min>1</min>
+	  <max>1</max>
+	</gearHealthRange>
+  <forceNormalGearQuality>false</forceNormalGearQuality>
+	<minApparelQuality>Legendary</minApparelQuality>
+	<maxApparelQuality>Legendary</maxApparelQuality>
+  <backstoryFiltersOverride>
+    <li>
+      <categoriesChildhood>
+        <li>Miho_BackstoryChild_OathTail_Alpha</li>
+      </categoriesChildhood>
+      <categoriesAdulthood>
+        <li>Miho_BackstoryAdult_OathTail_Alpha</li>
+      </categoriesAdulthood>
+    </li>
+  </backstoryFiltersOverride>
+  <xenotypeSet>
+    <xenotypeChances>
+      <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho>
+      <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Arctic>
+      <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Highland>
+      <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">5.2</Xeno_CelestialMiho_Highmate>
+    </xenotypeChances>
+  </xenotypeSet>
+  <requiredWorkTags>
+    <li>Intellectual</li>
+  </requiredWorkTags>
+  <disallowedTraits>
+    <li>BodyPurist</li>
+  </disallowedTraits>
+  <disallowedTraitsWithDegree>
+    <PsychicSensitivity>-2</PsychicSensitivity>
+  </disallowedTraitsWithDegree>
+  <forcedHairColor>(255,255,255)</forcedHairColor>
+  <abilities>
+    <li>AL_ShroudPower_Skip</li>
+    <li>Miho_Ability_OriginPolaris</li>
+    <li>Miho_Ability_Origin_Adept</li>
+  </abilities>
+  <modExtensions>
+    <li Class="AriandelLibrary.FixedIdentityExtension">
+    <firstNameKey>AL_Name_TheOathTail_Alpha_First</firstNameKey>
+    <lastNameKey>AL_Name_TheOathTail_Alpha_Last</lastNameKey>
+    <nickNameKey>AL_Name_TheOathTail_Alpha_Nick</nickNameKey>
+    <childhoodBackstoryDef>Miho_BackstoryChild_OathTail_Alpha</childhoodBackstoryDef>
+    <adulthoodBackstoryDef>Miho_BackstoryAdult_OathTail_Alpha</adulthoodBackstoryDef>
+    <forcedAgeYears>247</forcedAgeYears>
+    <forcedChronologicalAgeYears>4219</forcedChronologicalAgeYears>
+    <forcedHeadTypeDef>Head2</forcedHeadTypeDef>
+    <disableRandomTraits>true</disableRandomTraits>
+    <extraForcedTraits>
+      <li><def>TooSmart</def></li>
+      <li><def>Miho_TheOathTail</def></li>
+      <li><def>Bisexual</def></li>
+      <li>
+       <def>Miho_TheOathTail_Beauty</def>
+       <degree>2</degree>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Masochist</def>
+      </li>
+      <li MayRequire="vegapnk.cumpilation">
+        <def>Cumpilation_LikesCumflation</def>
+      </li>
+    </extraForcedTraits>
+    <extraForcedHediffs>
+      <li>
+        <def>PsychicAmplifier</def>
+        <severity>1</severity>
+        <partDef>Brain</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>1000</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>1000</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>20</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_TheOath</def>
+        <severity>1</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>FR_BloodMoon</def>
+      </li>
+      <li>
+        <def>FR_KTBlood</def>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>BloodMoonMark</def>
+        <severity>1</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>SuperSwordHediff</def>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_MidnightAbilityHediff</def>
+      </li>
+      <li>
+        <def>FR_Identity_TheOathTail_Alpha</def>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Breasts</def>
+        <severity>0.24</severity>
+        <partDef>Chest</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Vagina</def>
+        <severity>0.19</severity>
+        <partDef>Genitals</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Anus</def>
+        <severity>0.01</severity>
+        <partDef>Anus</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+    </extraForcedHediffs>
+    </li>
+    <li Class="AriandelLibrary.NPCKindTag">
+      <npcTag>TheOathTail_Alpha</npcTag>
+    </li>
+    <li Class="AriandelLibrary.SpecialPawnExtension">
+      <uniqueID>TheOathTail_Alpha</uniqueID>
+      <tabDef>FR_Character_Tab</tabDef>
+      <iconPathRecruited>FRSpecialCharacter/Icon/KaZuk</iconPathRecruited>
+      <labelKey>FRSpecialPawnTheOathTail_Alpha.label</labelKey>
+      <descKey>FRSpecialPawnTheOathTail_Alpha.desc</descKey>
+      <normalCooldownTicks>30000</normalCooldownTicks>
+      <resurrectCooldownTicks>30000</resurrectCooldownTicks>
+      <order>13</order>
+      <authorizeCheckOnGeneration>true</authorizeCheckOnGeneration>
+    </li>
+    <li Class="AriandelLibrary.AL_Kill_Manager_Extension" />
+    <li Class="AriandelLibrary.AL_RefuseMentalBreak_Extension">
+      <blockMentalBreak>true</blockMentalBreak>
+    </li>
+    <li Class="AriandelLibrary.AL_FloatMenuBlocker_Extension">
+      <blockRescue>true</blockRescue>
+      <blockCapture>true</blockCapture>
+      <blockArrest>true</blockArrest>
+    </li>
+    <li Class="AriandelLibrary.AL_AzzyPregnancy_Extension">
+      <replaceWithKind>Miho_PlayerColonistBorn</replaceWithKind>
+    </li>
+    <li Class="AriandelLibrary.AL_SubcoreScannerBlocker_Extension" />
+    <li Class="AriandelLibrary.AL_SurgeryBlocker_Extension">
+      <blockLowTech>true</blockLowTech>
+      <blockHarvest>true</blockHarvest>
+    </li>
+    <li Class="AriandelLibrary.AL_LockConsciousness_Extension"/>
+    <li Class="AriandelLibrary.AL_AgeFreeze_Extension">
+      <freezeBiologicalAge>true</freezeBiologicalAge>
+    </li>
+    <li Class="AriandelLibrary.AL_TraitLock_Extension">
+      <requiredTraits>
+        <li>Miho_TheOathTail</li>
+      </requiredTraits>
+    </li>
+    <li Class="AriandelLibrary.Anomaly.AL_RitualRoleRestriction_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_ObeliskDuplicationBlocker_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_FleshbeastReflect_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_PsychicSlaughterReflect_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.rjw.menstruation.AL_RJW_Menstruation_Pregnancy_Extension" MayRequire="rjw.menstruation"> 
+      <replaceWithKind>Miho_PlayerColonistBorn</replaceWithKind>
+    </li>
+  </modExtensions>
+</PawnKindDef>
+
+<PawnKindDef ParentName="MihoBase">
+  <defName>FR_TheOathTail_Beta</defName>
+  <label>御狐-仙狐</label>
+  <fixedGender>Female</fixedGender>
+  <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+  <combatPower>20000</combatPower>
+  <itemQuality>Legendary</itemQuality>
+  <isFighter>true</isFighter>
+  <factionLeader>false</factionLeader>
+  <apparelMoney>
+    <min>99999999</min>
+    <max>99999999</max>
+  </apparelMoney>
+  <apparelTags>
+    <li>FR_Apparel_OathTail_Tag</li>
+  </apparelTags>
+  <apparelRequired>
+    <li>FR_OathTail_Uniform</li>
+  </apparelRequired>
+  <weaponTags>
+    <li>FR_Weapon_OathTail_Beta</li>
+  </weaponTags>
+  <weaponMoney>
+    <min>99999999</min>
+    <max>99999999</max>
+  </weaponMoney>
+  <gearHealthRange Inherit="False">
+	  <min>1</min>
+	  <max>1</max>
+	</gearHealthRange>
+  <forceNormalGearQuality>false</forceNormalGearQuality>
+	<minApparelQuality>Legendary</minApparelQuality>
+	<maxApparelQuality>Legendary</maxApparelQuality>
+  <backstoryFiltersOverride>
+    <li>
+      <categoriesChildhood>
+        <li>Miho_BackstoryChild_OathTail_Beta</li>
+      </categoriesChildhood>
+      <categoriesAdulthood>
+        <li>Miho_BackstoryAdult_OathTail_Beta</li>
+      </categoriesAdulthood>
+    </li>
+  </backstoryFiltersOverride>
+  <xenotypeSet>
+    <xenotypeChances>
+      <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho>
+      <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Arctic>
+      <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Highland>
+      <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">5.2</Xeno_CelestialMiho_Highmate>
+    </xenotypeChances>
+  </xenotypeSet>
+  <requiredWorkTags>
+    <li>Intellectual</li>
+  </requiredWorkTags>
+  <disallowedTraits>
+    <li>BodyPurist</li>
+  </disallowedTraits>
+  <disallowedTraitsWithDegree>
+    <PsychicSensitivity>-2</PsychicSensitivity>
+  </disallowedTraitsWithDegree>
+  <forcedHairColor>(255,255,255)</forcedHairColor>
+  <abilities>
+    <li>AL_ShroudPower_Skip</li>
+    <li>Miho_Ability_Heal</li>
+    <li>Miho_Ability_OriginPolaris</li>
+  </abilities>
+  <modExtensions>
+    <li Class="AriandelLibrary.FixedIdentityExtension">
+    <firstNameKey>AL_Name_TheOathTail_Beta_First</firstNameKey>
+    <lastNameKey>AL_Name_TheOathTail_Beta_Last</lastNameKey>
+    <nickNameKey>AL_Name_TheOathTail_Beta_Nick</nickNameKey>
+    <childhoodBackstoryDef>Miho_BackstoryChild_OathTail_Beta</childhoodBackstoryDef>
+    <adulthoodBackstoryDef>Miho_BackstoryAdult_OathTail_Beta</adulthoodBackstoryDef>
+    <forcedAgeYears>242</forcedAgeYears>
+    <forcedChronologicalAgeYears>4214</forcedChronologicalAgeYears>
+    <forcedHeadTypeDef>Head2</forcedHeadTypeDef>
+    <disableRandomTraits>true</disableRandomTraits>
+    <extraForcedTraits>
+      <li><def>Miho_TheOathTail</def></li>
+      <li><def>Bisexual</def></li>
+      <li>
+       <def>Miho_TheOathTail_Beauty</def>
+       <degree>1</degree>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Masochist</def>
+      </li>
+      <li MayRequire="vegapnk.cumpilation">
+        <def>Cumpilation_LikesCumflation</def>
+      </li>
+    </extraForcedTraits>
+    <extraForcedHediffs>
+      <li>
+        <def>PsychicAmplifier</def>
+        <severity>1</severity>
+        <partDef>Brain</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>1000</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>1000</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>20</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>Furi_TheOath</def>
+        <severity>1</severity>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li>
+        <def>FR_BloodMoon</def>
+      </li>
+      <li>
+        <def>FR_KTBlood</def>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>BloodMoonMark</def>
+        <severity>1</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>SuperSwordHediff</def>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_MidnightAbilityHediff</def>
+      </li>
+      <li>
+        <def>FR_Identity_TheOathTail_Beta</def>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Breasts</def>
+        <severity>0.21</severity>
+        <partDef>Chest</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Vagina</def>
+        <severity>0.19</severity>
+        <partDef>Genitals</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+      <li MayRequire="rim.job.world">
+        <def>Anus</def>
+        <severity>0.01</severity>
+        <partDef>Anus</partDef>
+        <overwriteIfExists>true</overwriteIfExists>
+      </li>
+    </extraForcedHediffs>
+    </li>
+    <li Class="AriandelLibrary.NPCKindTag">
+      <npcTag>TheOathTail_Beta</npcTag>
+    </li>
+    <li Class="AriandelLibrary.SpecialPawnExtension">
+      <uniqueID>TheOathTail_Beta</uniqueID>
+      <tabDef>FR_Character_Tab</tabDef>
+      <iconPathRecruited>FRSpecialCharacter/Icon/SeZuk</iconPathRecruited>
+      <labelKey>FRSpecialPawnTheOathTail_Beta.label</labelKey>
+      <descKey>FRSpecialPawnTheOathTail_Beta.desc</descKey>
+      <normalCooldownTicks>30000</normalCooldownTicks>
+      <resurrectCooldownTicks>30000</resurrectCooldownTicks>
+      <order>14</order>
+      <authorizeCheckOnGeneration>true</authorizeCheckOnGeneration>
+    </li>
+    <li Class="AriandelLibrary.AL_Kill_Manager_Extension" />
+    <li Class="AriandelLibrary.AL_RefuseMentalBreak_Extension">
+      <blockMentalBreak>true</blockMentalBreak>
+    </li>
+    <li Class="AriandelLibrary.AL_FloatMenuBlocker_Extension">
+      <blockRescue>true</blockRescue>
+      <blockCapture>true</blockCapture>
+      <blockArrest>true</blockArrest>
+    </li>
+    <li Class="AriandelLibrary.AL_AzzyPregnancy_Extension">
+      <replaceWithKind>Miho_PlayerColonistBorn</replaceWithKind>
+    </li>
+    <li Class="AriandelLibrary.AL_SubcoreScannerBlocker_Extension" />
+    <li Class="AriandelLibrary.AL_SurgeryBlocker_Extension">
+      <blockLowTech>true</blockLowTech>
+      <blockHarvest>true</blockHarvest>
+    </li>
+    <li Class="AriandelLibrary.AL_LockConsciousness_Extension"/>
+    <li Class="AriandelLibrary.AL_AgeFreeze_Extension">
+      <freezeBiologicalAge>true</freezeBiologicalAge>
+    </li>
+    <li Class="AriandelLibrary.AL_TraitLock_Extension">
+      <requiredTraits>
+        <li>Miho_TheOathTail</li>
+      </requiredTraits>
+    </li>
+    <li Class="AriandelLibrary.Anomaly.AL_RitualRoleRestriction_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_ObeliskDuplicationBlocker_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_FleshbeastReflect_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.Anomaly.AL_PsychicSlaughterReflect_Extension" MayRequire="Ludeon.RimWorld.Anomaly" />
+    <li Class="AriandelLibrary.rjw.menstruation.AL_RJW_Menstruation_Pregnancy_Extension" MayRequire="rjw.menstruation"> 
+      <replaceWithKind>Miho_PlayerColonistBorn</replaceWithKind>
+    </li>
+  </modExtensions>
+</PawnKindDef>
+
+</Defs>

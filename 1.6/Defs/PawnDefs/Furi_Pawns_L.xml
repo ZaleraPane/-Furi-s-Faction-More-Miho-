@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef>
+    <defName>Furi_PawnBase1</defName>
+    <label>符漓平民</label>
+    <combatPower>400</combatPower>
+    <itemQuality>Good</itemQuality>
+    <isFighter>true</isFighter>
+    <trader>false</trader>
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>180</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <initialWillRange>70~100</initialWillRange>
+    <initialResistanceRange>70~100</initialResistanceRange>
+    <race>Alien_Miho</race>
+    <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <weaponMoney>9999~9999</weaponMoney>
+    <apparelTags>
+      <li>Miho_Royal</li>
+    </apparelTags>
+    <weaponTags>
+      <li>FRWeapontag1</li>
+    </weaponTags>
+    <apparelMoney>9999~9999</apparelMoney>
+    <apparelRequired>
+      <li>Miho_Apparel_OnSkin_OrnatedMiho</li>
+      <li>Miho_Apparel_Under_IndustrialStripe</li>
+      <li>Miho_Apparel_Mask_Eltex</li>
+      <li MayRequire="Ariandel.MiliraImperium">Milira_DarkMattershieldbelt</li>
+      <li MayRequire="supermelee.sword">Apparel_MihoJadePendant</li>
+    </apparelRequired>
+    <startingHediffs>
+      <li>
+        <def>Miho_PositiveFlower_Tea_Addiction</def>
+      </li>
+      <li>
+        <def>Miho_Elegans_Hediff</def>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>0.4</severity>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>0.4</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>0.4</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_LifeSupport</def>
+      </li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag1</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.30</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.30</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.10</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.30</Xeno_CelestialMiho_Highmate>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Furi_PawnBase2</defName>
+    <label>符漓巫女</label>
+    <combatPower>500</combatPower>
+    <itemQuality>Good</itemQuality>
+    <isFighter>true</isFighter>
+    <trader>true</trader>
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>180</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <initialWillRange>70~100</initialWillRange>
+    <initialResistanceRange>70~100</initialResistanceRange>
+    <race>Alien_Miho</race>
+    <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <weaponMoney>9999~9999</weaponMoney>
+    <apparelTags>
+      <li>Miho_Royal</li>
+    </apparelTags>
+    <weaponTags>
+      <li>FRWeapontag1</li>
+    </weaponTags>
+    <apparelMoney>9999~9999</apparelMoney>
+    <apparelRequired>
+      <li>Miho_Apparel_OnSkin_OrnatedOne</li>
+      <li>Miho_Apparel_Under_EltexOne</li>
+      <li>Miho_Apparel_Mask_Eltex</li>
+      <li MayRequire="Ariandel.MiliraImperium">Milira_DarkMattershieldbelt</li>
+      <li MayRequire="supermelee.sword">Apparel_MihoJadePendant</li>
+    </apparelRequired>
+    <startingHediffs>
+      <li>
+        <def>Miho_PositiveFlower_Tea_Addiction</def>
+      </li>
+      <li>
+        <def>Miho_Elegans_Hediff</def>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>0.5</severity>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>0.4</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>4</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_LifeSupport</def>
+      </li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag1</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.30</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.30</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.10</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.30</Xeno_CelestialMiho_Highmate>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Furi_PawnBase3</defName>
+    <label>符漓民兵</label>
+    <combatPower>700</combatPower>
+    <itemQuality>Good</itemQuality>
+    <isFighter>true</isFighter>
+    <trader>false</trader>
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>180</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <initialWillRange>70~100</initialWillRange>
+    <initialResistanceRange>70~100</initialResistanceRange>
+    <race>Alien_Miho</race>
+    <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>FRWeapontag1</li>
+      <li>FRWeapontag2</li>
+    </weaponTags>
+    <apparelMoney>9999~9999</apparelMoney>
+    <apparelTags>
+      <li>Miho_PMC</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Miho_Apparel_Shell_PMC</li>
+      <li>Miho_Apparel_OnSkin_PMC</li>
+      <li>Miho_Apparel_Under_Armor</li>
+      <li>Miho_Apparel_Mask_Eltex</li>
+      <li MayRequire="Ariandel.MiliraImperium">Milira_DarkMattershieldbelt</li>
+      <li MayRequire="supermelee.sword">Apparel_MihoJadePendant</li>
+    </apparelRequired>
+    <startingHediffs>
+      <li>
+        <def>Miho_PositiveFlower_Tea_Addiction</def>
+      </li>
+      <li>
+        <def>Miho_Elegans_Hediff</def>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>0.7</severity>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>0.4</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>0.4</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_LifeSupport</def>
+      </li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag2</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.50</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.10</Xeno_CelestialMiho_Highmate>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Furi_PawnBase4</defName>
+    <label>符漓军士</label>
+    <combatPower>1000</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <isFighter>true</isFighter>
+    <trader>false</trader>
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>180</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <initialWillRange>70~100</initialWillRange>
+    <initialResistanceRange>70~100</initialResistanceRange>
+    <race>Alien_Miho</race>
+    <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>FRWeapontag1</li>
+      <li>FRWeapontag2</li>
+      <li>FRWeapontag3</li>
+    </weaponTags>
+    <apparelMoney>9999~9999</apparelMoney>
+    <apparelTags>
+      <li>Miho_PMC</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Miho_Apparel_Shell_PMC</li>
+      <li>Miho_Apparel_OnSkin_Pariah</li>
+      <li>Miho_Apparel_Under_Armor</li>
+      <li>Miho_Apparel_Mask_Eltex</li>
+      <li MayRequire="Ariandel.MiliraImperium">Milira_DarkMattershieldbelt</li>
+      <li MayRequire="supermelee.sword">Apparel_MihoJadePendant</li>
+    </apparelRequired>
+    <startingHediffs>
+      <li>
+        <def>Miho_PositiveFlower_Tea_Addiction</def>
+      </li>
+      <li>
+        <def>Miho_Elegans_Hediff</def>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>0.7</severity>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>0.7</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>0.4</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_LifeSupport</def>
+      </li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag3</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.50</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.10</Xeno_CelestialMiho_Highmate>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Furi_PawnBase5</defName>
+    <label>符漓士官</label>
+    <combatPower>1200</combatPower>
+    <itemQuality>Excellent</itemQuality>
+    <isFighter>true</isFighter>
+    <trader>false</trader>
+    <factionLeader>false</factionLeader>
+    <minGenerationAge>180</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <initialWillRange>70~100</initialWillRange>
+    <initialResistanceRange>70~100</initialResistanceRange>
+    <race>Alien_Miho</race>
+    <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+    <weaponMoney>9999~9999</weaponMoney>
+    <apparelTags>
+      <li>Miho_Royal</li>
+      <li>Miho_PMC</li>
+    </apparelTags>
+    <weaponTags>
+      <li>FRWeapontag1</li>
+      <li>FRWeapontag2</li>
+      <li>FRWeapontag3</li>
+    </weaponTags>
+    <apparelMoney>9999~9999</apparelMoney>
+    <apparelRequired>
+      <li>Miho_Apparel_Shell_PMC</li>
+      <li>Miho_Apparel_Hat_EltexCaptain</li>
+      <li>Miho_Apparel_OnSkin_Pariah</li>
+      <li>Miho_Apparel_Under_Armor</li>
+      <li>Miho_Apparel_Mask_Eltex</li>
+      <li MayRequire="Ariandel.MiliraImperium">Milira_DarkMattershieldbelt</li>
+      <li MayRequire="supermelee.sword">Apparel_MihoJadePendant</li>
+    </apparelRequired>
+    <startingHediffs>
+      <li>
+        <def>Miho_PositiveFlower_Tea_Addiction</def>
+      </li>
+      <li>
+        <def>Miho_Elegans_Hediff</def>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>1.6</severity>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>1.6</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>0.7</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_LifeSupport</def>
+      </li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag4</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.50</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.10</Xeno_CelestialMiho_Highmate>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <PawnKindDef>
+    <defName>Furi_PawnBaseL</defName>
+    <label>符漓主教</label>
+    <combatPower>2000</combatPower>
+    <itemQuality>Masterwork</itemQuality>
+    <isFighter>true</isFighter>
+    <trader>false</trader>
+    <factionLeader>true</factionLeader>
+    <minGenerationAge>180</minGenerationAge>
+    <maxGenerationAge>200</maxGenerationAge>
+    <initialWillRange>70~100</initialWillRange>
+    <initialResistanceRange>70~100</initialResistanceRange>
+    <race>Alien_Miho</race>
+    <defaultFactionType>FR_Faction_KTP</defaultFactionType>
+    <weaponMoney>9999~9999</weaponMoney>
+    <apparelTags>
+        <li>Miho_Royal</li>
+        <li>Miho_Celestial</li>
+    </apparelTags>
+    <weaponTags>
+      <li>FRWeapontag3</li>
+    </weaponTags>
+    <apparelMoney>9999~9999</apparelMoney>
+    <apparelRequired>
+      <li>Miho_Apparel_Shell_Sorceress</li>
+      <li>Miho_Apparel_Hat_Sorceress</li>
+      <li>Miho_Apparel_OnSkin_Celestial</li>
+      <li>Miho_Apparel_Mask_Eltex</li>
+      <li MayRequire="Ariandel.MiliraImperium">Milira_DarkMattershieldbelt</li>
+      <li MayRequire="supermelee.sword">Apparel_MihoJadePendant</li>
+    </apparelRequired>
+    <startingHediffs>
+      <li>
+        <def>Miho_PositiveFlower_Tea_Addiction</def>
+      </li>
+      <li>
+        <def>Miho_Elegans_Hediff</def>
+      </li>
+      <li>
+        <def>Furi_Hediff1</def>
+        <severity>2</severity>
+      </li>
+      <li>
+        <def>Furi_Hediff2</def>
+        <severity>2</severity>
+      </li>
+      <li>
+        <def>AL_Hediff_ShroudAffinity</def>
+        <severity>2</severity>
+      </li>
+      <li MayRequire="supermelee.sword">
+        <def>Temple_LifeSupport</def>
+      </li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag4</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>Violent</requiredWorkTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.20</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.50</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.10</Xeno_CelestialMiho_Highmate>
+        <Xeno_CelestialMiho_Desert MayRequire="Ludeon.RimWorld.Biotech">0</Xeno_CelestialMiho_Desert>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 誓约之尾 -->
+  <TraitDef>
+    <defName>Miho_TheOathTail</defName>
+    <commonality>0.0</commonality>
+    <degreeDatas>
+      <li>
+        <label>御狐 誓约之尾</label>
+        <description>符皇之御狐，最为珍视的两柄佩刀：其一，神狐；其二，仙狐。\n\n符皇大婚，日后留其一，令其二视后如己侍之。</description>
+        <statOffsets>
+            <WorkSpeedGlobal>1.3</WorkSpeedGlobal>
+        </statOffsets>
+        <statFactors>
+            <WorkSpeedGlobal>1.4</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </degreeDatas>
+    <modExtensions>
+      <li Class="AriandelLibrary.AL_NoSkillDecay_Extension"/>
+      <li Class="AriandelLibrary.AL_PsychicShockReflect_Extension" />
+      <li Class="AriandelLibrary.AL_IgnoreGenePenalty_Extension">
+        <skill>Melee</skill>
+      </li>
+      <li Class="AriandelLibrary.AL_LockSkill_Extension">
+        <skill>Melee</skill>
+        <level>32</level>
+        <preventDecay>true</preventDecay>
+      </li>
+    </modExtensions>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>Miho_TheOathTail_Beauty</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>惊鸿绝艳</label>
+        <description>[PAWN_nameDef]的美貌使其他生灵皆为之动容。</description>
+        <degree>1</degree>
+        <statOffsets>
+          <PawnBeauty>5.2</PawnBeauty>
+          <MentalBreakThreshold>-2</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.01</CertaintyLossFactor>
+        </statFactors>
+      </li>
+      <li>
+        <label>风华绝代</label>
+        <description>[PAWN_nameDef]才华横溢，姿色冠绝当代。</description>
+        <degree>2</degree>
+        <statOffsets>
+          <PawnBeauty>5.2</PawnBeauty>
+          <MentalBreakThreshold>-2</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.01</CertaintyLossFactor>
+        </statFactors>
+      </li>
+      <li>
+        <label>倾世盛颜</label>
+        <description>[PAWN_nameDef]的颜值使世间一切可仅为她而倾覆，整个世界仿佛为做她的背景板而生。</description>
+        <degree>3</degree>
+        <statOffsets>
+          <PawnBeauty>13.14</PawnBeauty>
+          <MentalBreakThreshold>-2</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.01</CertaintyLossFactor>
+        </statFactors>
+      </li>
+      <li>
+        <label>永世无双</label>
+        <description>[PAWN_nameDef]我的天哪是符皇陛下!\(ToT)/</description>
+        <degree>4</degree>
+        <statOffsets>
+          <PawnBeauty>5.2</PawnBeauty>
+          <MentalBreakThreshold>-2</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.01</CertaintyLossFactor>
+        </statFactors>
+      </li>      
+    </degreeDatas>
+  </TraitDef>
+
+</Defs>

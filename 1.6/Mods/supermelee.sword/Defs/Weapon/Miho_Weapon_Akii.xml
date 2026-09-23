@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>FRMiho_Fallen</defName>
+		<label>雁靡-落华</label>
+        <techLevel>Ultra</techLevel>
+		<description>一把由雁靡改造的特制法刃，作为秋楪的防身武器。</description>
+		<thingCategories Inherit="False">
+      		<li>WeaponsMelee</li>
+    	</thingCategories>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Weapon/Akii/AkiiWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Miho_HeavyFactory</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>14</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MarketValue>10000</MarketValue>
+			<Mass>3</Mass>
+		</statBases>
+    	<relicChance>2</relicChance>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+			<WoodLog>100</WoodLog>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ComponentSpacer>10</ComponentSpacer>
+			<Miho_Ebony_SilkCloth>50</Miho_Ebony_SilkCloth>
+			<Miho_Ebony_Mulberry>20</Miho_Ebony_Mulberry>
+      		<Miho_CelestialScale>200</Miho_CelestialScale>
+		</costList>
+		<equippedStatOffsets>
+			<PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+			<PsychicEntropyMax>75</PsychicEntropyMax>
+            <AL_ShroudPotential>1.6</AL_ShroudPotential>
+		</equippedStatOffsets>
+		<weaponTags>
+			<li>FRMiho_Sabre</li>
+		</weaponTags>
+		<tools>
+			<li>
+        		<label>刺</label>
+        		<capacities>
+          			<li>StabSuper</li>
+        		</capacities>
+        		<power>4</power>
+        		<armorPenetration>0.25</armorPenetration>
+        		<cooldownTime>1</cooldownTime>
+        		<chanceFactor>1</chanceFactor>
+      		</li>
+			<li>
+        		<label>砍</label>
+        		<capacities>
+          			<li>CutSuper</li>
+        		</capacities>
+        		<power>2</power>
+        		<armorPenetration>0.4</armorPenetration>
+        		<cooldownTime>0.4</cooldownTime>
+        		<chanceFactor>4</chanceFactor>
+      		</li>
+		</tools>
+		<comps>
+			<li Class="SuperSword.CompProperties_SuperSword">
+        		<erosionMultiplier>0.5</erosionMultiplier>
+        		<whiteList>
+          			<li mayrequire="ariandel.miliraimperium">Milira_Lydiashield</li>
+          			<li mayrequire="Draconis.Koelime">Alien_Koelime</li>
+        		</whiteList>
+      		</li>
+			<!--li Class="AriandelLibrary.CompProperties_UserRestriction">
+        		<rejectionKey>Miho_WeaponRejected_AkiiS</rejectionKey>
+        		<allowedPawnKinds>
+          			<li>FRMiho_Akii</li>
+        		</allowedPawnKinds>
+      		</li-->
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+{
+  "TextureModID": "furi.specialfaction",
+  "ItemDefName": "FR_OathSlash_SeZuk",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.35,
+  "OffY": 0.09,
+  "Rotation": 35.0,
+  "BladeStart": -0.198275864,
+  "BladeEnd": 0.448275864,
+  "MeleeWeaponType": 62
+}

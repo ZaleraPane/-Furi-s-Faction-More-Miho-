@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadFolders>
+
+	<v1.6>
+		<li>1.6</li>
+		<li>Content</li>
+
+		<li IfModActive="supermelee.sword">1.6/Mods/supermelee.sword</li>
+
+		<li IfModActive="stm.ShellaBackgrounds">1.6/Mods/stm.ShellaBackgrounds</li>
+		<li IfModActive="vanillaexpanded.backgrounds">1.6/Mods/VBE</li>
+		<li IfModActive="Ariandel.MiliraImperium">1.6/Mods/Ariandel.MiliraImperium</li>
+	</v1.6>
+
+</loadFolders>

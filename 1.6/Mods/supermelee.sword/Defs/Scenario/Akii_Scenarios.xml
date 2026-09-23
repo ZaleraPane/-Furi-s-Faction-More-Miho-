@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef ParentName="ScenarioBase">
+    <defName>Furi_Akii_Scenarios</defName>
+    <label>秋楪游记</label>
+    <description>一楪知秋辞旧木，半笺醉墨染新诗。</description>
+    <scenario>
+        <showInUI>true</showInUI>
+
+        <summary>一位来自异界的狐，变为美狐的模样，来到了边缘世界。</summary>
+        <playerFaction Inherit="false">
+            <def>PlayerFaction</def>
+            <factionDef>FR_Faction_Player</factionDef>
+        </playerFaction>
+        <parts>
+
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>1</pawnChoiceCount>
+          <leftBehindPawnKind>FRMiho_Akii</leftBehindPawnKind>
+          <kindCounts>
+            <li>
+              <kindDef>FRMiho_Akii</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>10</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>MedicineUltratech</thingDef>
+          <count>15</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_PositiveFlower_Juice</thingDef>
+          <count>5</count>
+        </li>
+  		  <li Class="ScenPart_StartingThing_Defined">
+	  		  <def>ScatterThingsNearPlayerStart</def>
+		  	  <thingDef>Miho_PositiveFlower_Pipe</thingDef>
+			  <count>50</count>
+		    </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Silver</thingDef>
+          <count>800</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Miho_InariZushi</thingDef>
+          <count>1</count>
+        </li>
+		    <li Class="ScenPart_ScatterThingsNearPlayerStart">
+    			<def>ScatterThingsAnywhere</def>
+    			<thingDef>Steel</thingDef>
+    			<count>250</count>
+		    </li>
+		    <li Class="ScenPart_ScatterThingsNearPlayerStart">
+    			<def>ScatterThingsAnywhere</def>
+		    	<thingDef>Miho_Ceramics</thingDef>
+		      <count>200</count>
+		    </li>
+		    <li Class="ScenPart_ScatterThingsNearPlayerStart">
+			    <def>ScatterThingsAnywhere</def>
+		    	<thingDef>WoodLog</thingDef>
+    			<count>160</count>
+		    </li>
+    		<li Class="ScenPart_ScatterThingsAnywhere">
+			    <def>ScatterThingsAnywhere</def>
+		    	<thingDef>ShipChunk</thingDef>
+    			<count>14</count>
+		    </li>
+    		<li Class="ScenPart_ScatterThingsAnywhere">
+			    <def>ScatterThingsAnywhere</def>
+		    	<thingDef>Steel</thingDef>
+    			<count>275</count>
+		    </li>
+    		<li Class="ScenPart_ScatterThingsAnywhere">
+		    	<def>ScatterThingsAnywhere</def>
+    			<thingDef>MealSurvivalPack</thingDef>
+		    	<count>30</count>
+    		</li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>TechprofSubpersonaCore</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Drone</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_BasicFactory</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Weapon</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_ApparelBasic</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Machining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BiofuelRefining</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>Miho_Silk</project>
+        </li>
+        
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <li Class="ScenPart_DisableMapGen">
+          <def>DisableExostriderRemains</def>
+        </li>
+
+        </parts>
+    </scenario>
+    </ScenarioDef>
+
+</Defs>

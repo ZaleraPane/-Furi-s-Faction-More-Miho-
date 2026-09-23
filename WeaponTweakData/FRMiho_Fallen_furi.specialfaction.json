@@ -1,0 +1,14 @@
+{
+  "TextureModID": "furi.specialfaction",
+  "ItemDefName": "FRMiho_Fallen",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.25,
+  "OffY": 0.03,
+  "Rotation": 25.0,
+  "ScaleX": 2.0,
+  "ScaleY": 2.0,
+  "BladeStart": -0.198275864,
+  "BladeEnd": 0.198275864,
+  "MeleeWeaponType": 54
+}

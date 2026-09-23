@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>FR_Faction_KTP</defName>
+    <label>氷玥国教庭</label>
+    <description>氷玥国教庭在边缘世界的教会分部，其一定程度上可以代表帝国。</description>
+    <categoryTag>FR_Faction_KTP</categoryTag>
+    <pawnSingular>符漓</pawnSingular>
+    <pawnsPlural>符漓</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <fixedName>氷玥国教庭边缘世界驻地</fixedName>
+    <colorSpectrum>
+      <li>(1, 1, 1)</li>
+    </colorSpectrum>
+    <autoFlee>false</autoFlee>
+    <basicMemberKind>Furi_PawnBase2</basicMemberKind>
+    <canMakeRandomly>false</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>主教</leaderTitle>
+    <techLevel>Archotech</techLevel>
+    <arrivalLayerWhitelist>
+      <li>Surface</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
+    <royalFavorIconPath>Faction/Furi_FactionIcon</royalFavorIconPath>
+    <factionNameMaker>Furi_Faction_FName</factionNameMaker>
+    <settlementNameMaker>Furi_Faction_TName</settlementNameMaker>
+    <earliestRaidDays>0</earliestRaidDays>
+    <caravanTraderKinds>
+    </caravanTraderKinds>
+    <baseTraderKinds>
+    </baseTraderKinds>
+    <orbitalTraderKinds>
+      <li>Furi_TraderShip</li>
+    </orbitalTraderKinds>
+    <fixedLeaderKinds>
+      <li>Furi_PawnBaseL</li>
+    </fixedLeaderKinds>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Xeno_CelestialMiho MayRequire="Ludeon.RimWorld.Biotech">0.25</Xeno_CelestialMiho>
+        <Xeno_CelestialMiho_Arctic MayRequire="Ludeon.RimWorld.Biotech">0.25</Xeno_CelestialMiho_Arctic>
+        <Xeno_CelestialMiho_Highland MayRequire="Ludeon.RimWorld.Biotech">0.25</Xeno_CelestialMiho_Highland>
+        <Xeno_CelestialMiho_Highmate MayRequire="Ludeon.RimWorld.Biotech">0.25</Xeno_CelestialMiho_Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+    <raidLootMaker>MechanoidRaidLootMaker</raidLootMaker>
+    <backstoryFilters>
+      <li>
+        <categoriesChildhood>
+          <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+          <li>FR_Miho_BaseBackstoryChild_Tag3</li>
+        </categoriesChildhood>
+        <categoriesAdulthood>
+          <li>FR_Miho_BaseBackstory_Tag1</li>
+          <li>FR_Miho_BaseBackstory_Tag2</li>
+          <li>FR_Miho_BaseBackstory_Tag3</li>
+          <li>FR_Miho_BaseBackstory_Tag4</li>
+        </categoriesAdulthood>
+      </li>
+    </backstoryFilters>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(40000, 0.1)</li>
+        <li>(900000, 10)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(2400, 5000)</li>
+        <li>(7000, 7000)</li>
+        <li>(21000, 10000)</li>
+        <li>(70000, 20000)</li>
+        <li>(240000, 40000)</li>
+        <li>(900000, 90000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <factionIconPath>Faction/Furi_FactionIcon</factionIconPath>
+    <settlementTexturePath>Faction/Furi_FactionIcon</settlementTexturePath>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
+    <disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>FR_Origin_Silk</li>
+        <li>FR_Origin_EnchantSilk</li>
+        <li>FR_Origin_Steel</li>
+        <li>FR_Origin_RefinedSteel</li>
+        <li>FR_Origin_AlloySteel</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <allowedArrivalTemperatureRange>
+      <min>-273</min>
+      <max>2000</max>
+    </allowedArrivalTemperatureRange>
+    <pawnGroupMakers Inherit="false">
+
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>40</commonality>
+				<options>
+          <Furi_PawnBase4>40</Furi_PawnBase4>
+          <Furi_PawnBase5>10</Furi_PawnBase5>
+				</options>
+			</li>
+			
+      <li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+          <Furi_PawnBase4>20</Furi_PawnBase4>
+          <Furi_PawnBase5>20</Furi_PawnBase5>
+				</options>
+			</li>
+
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+          <Furi_PawnBase1>10</Furi_PawnBase1>
+          <Furi_PawnBase2>10</Furi_PawnBase2>
+          <Furi_PawnBase3>20</Furi_PawnBase3>
+          <Furi_PawnBase4>40</Furi_PawnBase4>
+          <Furi_PawnBase5>10</Furi_PawnBase5>
+				</options>
+      </li>
+
+    </pawnGroupMakers>
+    <allowedCultures>
+      <li>Furi_Culture</li>
+    </allowedCultures>
+    <fixedIdeo>true</fixedIdeo>
+    <ideoName>氷玥国教</ideoName>
+    <ideoDescription>氷玥国教最初是符漓在氷都的一些信仰符皇的民间团体。\n\n后形成组织化的宗教，被正式立为氷玥的国教。\n\n那曾被驱逐的非法组织仍试图进犯氷玥，多次命杂牌军队骚扰氷玥的边境。\n\n符漓最终全歼了非法组织的杂牌军队并将他的势力全都赶下了海。</ideoDescription>
+    <deityPresets>
+      <li>
+        <nameType>
+          <name>符皇</name>
+          <type>氷幕·血月</type>
+        </nameType>
+        <gender>Male</gender>
+        <iconPath>Faction/Furi_FactionIcon</iconPath>
+      </li>
+    </deityPresets>
+
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Furi_Meme_C</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Furi_Meme_S</li>
+    </requiredMemes>
+
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Furi_Meme_C</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Furi_Meme_S</li>
+    </allowedMemes>
+
+    <disallowedPrecepts>
+    </disallowedPrecepts>
+
+  </FactionDef>
+
+
+</Defs>

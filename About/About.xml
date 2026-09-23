@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>符漓派系拓展：氷玥(Furi's Faction More Miho)</name>
+    <author>氷玥·符漓</author>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <description>符漓派系拓展：氷玥\n\n添加了一个新派系(半成品)\n\n铸币作者不仅穷还菜，一边学一边做，还要自己解决贴图。\n\n作者在米帝群，猫咖群，星环群和麻薯群都可以找到，ID：符雪初梦。</description>
+    <packageId>Furi.SpecialFaction</packageId>
+    <modDependencies>
+        <li>
+            <packageId>Ariandel.AriandelLibrary</packageId>
+            <displayName>Ariandel Library</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3665997350</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>supermelee.sword</packageId>
+            <displayName>[MCW]Miho expand:Blood Moon Temple 美狐神殿拓展</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3698409012</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>stm.ShellaBackgrounds</li>
+        <li>vanillaexpanded.backgrounds</li>
+        <li>supermelee.sword</li>
+        <li>Ariandel.AriandelLibrary</li>
+        <li>Ariandel.MiliraImperium</li>
+    </loadAfter>
+</ModMetaData>

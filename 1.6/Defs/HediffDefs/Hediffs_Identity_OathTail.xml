@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>FR_Identity_TheOathTail_Alpha</defName>
+    <label>誓约之尾：神狐</label>
+    <description>我的天哪是神狐大人！</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.5</initialSeverity>
+    <stages>
+        <li>
+            <becomeVisible>false</becomeVisible>
+        </li>
+    </stages>
+    
+    <comps>
+    <li Class="AriandelLibrary.HediffCompProperties_SpecialIdentity">
+      <staticID>TheOathTail_Alpha</staticID>
+      <requiredPawnKind>FR_TheOathTail_Alpha</requiredPawnKind>
+    </li>
+  </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>FR_Identity_TheOathTail_Beta</defName>
+    <label>誓约之尾：仙狐</label>
+    <description>我的天哪是仙狐大人！</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>0.5</initialSeverity>
+    <stages>
+        <li>
+            <becomeVisible>false</becomeVisible>
+        </li>
+    </stages>
+    
+    <comps>
+    <li Class="AriandelLibrary.HediffCompProperties_SpecialIdentity">
+      <staticID>TheOathTail_Beta</staticID>
+      <requiredPawnKind>FR_TheOathTail_Beta</requiredPawnKind>
+    </li>
+  </comps>
+  </HediffDef>
+
+</Defs>

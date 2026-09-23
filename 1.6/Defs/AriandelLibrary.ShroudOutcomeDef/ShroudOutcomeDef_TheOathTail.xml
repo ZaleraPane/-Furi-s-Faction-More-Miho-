@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AriandelLibrary.ShroudOutcomeDef>
+    <defName>AL_Outcome_Join_Kazuk</defName>
+    <label>召唤神狐</label>
+    <description>{0} has returned.</description>
+    <workerClass>AriandelLibrary.ShroudOutcome_Generator</workerClass>
+    <letterMode>PositiveEvent</letterMode>
+    <qualityRange>1.0~1.0</qualityRange>
+    <weight>520</weight>
+    <isBadOutcome>false</isBadOutcome>
+    <isUnique>true</isUnique>
+    <minRefireDays>0</minRefireDays>
+
+    <pawnList>
+      <li>
+        <pawnkindDefName>FR_TheOathTail_Alpha</pawnkindDefName>
+        <probability>1</probability>
+        <independentProbability>true</independentProbability>
+        <shouldBeRegistered>true</shouldBeRegistered>
+        
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>我的天哪是神狐大人</pawnDescription>
+        
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+    </pawnList>
+
+    <comps>
+    </comps>
+  </AriandelLibrary.ShroudOutcomeDef>
+
+  <AriandelLibrary.ShroudOutcomeDef>
+    <defName>AL_Outcome_Join_Sezuk</defName>
+    <label>召唤仙狐</label>
+    <description>{0} has returned.</description>
+    <workerClass>AriandelLibrary.ShroudOutcome_Generator</workerClass>
+    <letterMode>PositiveEvent</letterMode>
+    <qualityRange>1.0~1.0</qualityRange>
+    <weight>520</weight>
+    <isBadOutcome>false</isBadOutcome>
+    <isUnique>true</isUnique>
+    <minRefireDays>0</minRefireDays>
+
+    <pawnList>
+      <li>
+        <pawnkindDefName>FR_TheOathTail_Beta</pawnkindDefName>
+        <probability>1</probability>
+        <independentProbability>true</independentProbability>
+        <shouldBeRegistered>true</shouldBeRegistered>
+        
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>我的天哪是仙狐大人</pawnDescription>
+        
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+    </pawnList>
+
+    <comps>
+    </comps>
+  </AriandelLibrary.ShroudOutcomeDef>
+
+</Defs>

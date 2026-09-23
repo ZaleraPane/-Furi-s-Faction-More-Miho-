@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- 神狐 -->
+  <AL_Name_TheOathTail_Alpha_First>神狐</AL_Name_TheOathTail_Alpha_First>
+  <!-- 随主姓 -->
+  <AL_Name_TheOathTail_Alpha_Last>符玥</AL_Name_TheOathTail_Alpha_Last>
+  <!-- 御狐其一 -->
+  <AL_Name_TheOathTail_Alpha_Nick>神狐</AL_Name_TheOathTail_Alpha_Nick>
+
+  <FRSpecialPawnTheOathTail_Alpha.label>FR-KT-α · 御狐之神狐</FRSpecialPawnTheOathTail_Alpha.label>
+  <FRSpecialPawnTheOathTail_Alpha.desc>御狐之其一，本体为符皇最珍视的佩刀之一，是利刃是侍女也是侍卫。由于符皇不需要保护，其侍奉符后更多，自身同其妹实力与地位也仅次于符后。</FRSpecialPawnTheOathTail_Alpha.desc>
+
+  <!-- 仙狐 -->
+  <AL_Name_TheOathTail_Beta_First>仙狐</AL_Name_TheOathTail_Beta_First>
+  <!-- 随主姓 -->
+  <AL_Name_TheOathTail_Beta_Last>符玥</AL_Name_TheOathTail_Beta_Last>
+  <!-- 御狐其一 -->
+  <AL_Name_TheOathTail_Beta_Nick>仙狐</AL_Name_TheOathTail_Beta_Nick>
+
+  <FRSpecialPawnTheOathTail_Beta.label>FR-KT-β · 御狐之仙狐</FRSpecialPawnTheOathTail_Beta.label>
+  <FRSpecialPawnTheOathTail_Beta.desc>御狐之其二，本体为符皇最珍视的佩刀之二。在符皇大婚次日得令随身侍奉符后，与其姐均常受到符后关心，关系甚佳至于冷落符皇使皇不悦恼羞成怒。</FRSpecialPawnTheOathTail_Beta.desc>
+
+  <!--誓约之刃与御狐常服-->
+  <OathTail_OathSlash_WeaponRejected>誓约之刃拒绝了你，仅有符皇符后及御狐本身可以驾驭誓约之刃。</OathTail_OathSlash_WeaponRejected>
+
+  <!-- 符皇化名 -->
+  <AL_Name_Imperatofu_First>氷璃</AL_Name_Imperatofu_First>
+  <!-- 符玥为姓 -->
+  <AL_Name_Imperatofu_Last>符玥</AL_Name_Imperatofu_Last>
+  <!-- 称呼 -->
+  <AL_Name_Imperatofu_Nick>符皇</AL_Name_Imperatofu_Nick>
+
+  <FRSpecialPawnImperatofu.label>FR-KT · 氷玥符皇</FRSpecialPawnImperatofu.label>
+  <FRSpecialPawnImperatofu.desc>氷玥符皇氷幕·血月的其中一具化身，化名为符玥氷璃，闲来无事到边缘世界游玩。</FRSpecialPawnImperatofu.desc>
+
+  <!-- 符后化名 -->
+  <AL_Name_Imperasofu_First>初梦</AL_Name_Imperasofu_First>
+  <!-- 符雪为姓 -->
+  <AL_Name_Imperasofu_Last>符雪</AL_Name_Imperasofu_Last>
+  <!-- 称呼 -->
+  <AL_Name_Imperasofu_Nick>符后</AL_Name_Imperasofu_Nick>
+
+  <FRSpecialPawnImperasofu.label>FR-KT0 · 氷玥符后</FRSpecialPawnImperasofu.label>
+  <FRSpecialPawnImperasofu.desc>氷玥符后暮雨·雪月的其中一具化身，化名为符雪初梦，随符皇来到边缘世界游玩。</FRSpecialPawnImperasofu.desc>
+
+</LanguageData>

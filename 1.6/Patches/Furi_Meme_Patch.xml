@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+    <value>
+      <li>Furi_Meme_C</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[@Name="ProselytizingBase"]/requiredMemes</xpath>
+    <value>
+      <li>Furi_Meme_C</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PreceptDef[@Name="ProselytizingBase"]/associatedMemes</xpath>
+    <value>
+      <li>Furi_Meme_C</li>
+    </value>
+  </Operation>
+
+</Patch>

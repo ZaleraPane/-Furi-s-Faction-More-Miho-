@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>Heal_Knife</defName>
+		<label>神秘小刀</label>
+        <techLevel>Archotech</techLevel>
+		<description>一把很神奇的小刀</description>
+		<thingCategories Inherit="False">
+      		<li>WeaponsMelee</li>
+    	</thingCategories>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+			<texPath>Things/Weapon/Deriven/Heal_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+        <weaponTags>
+	        <li>FR_Weapon_Heal_Knife</li>
+        </weaponTags>
+		<recipeMaker>
+			<researchPrerequisite>FR_OriginEnchant_Tech</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>Miho_TableMachining</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+		        <Medicine>10</Medicine>
+                <Intellectual>10</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+		<generateCommonality>0.0005</generateCommonality>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>0.4</Mass>
+		</statBases>
+    	<relicChance>2</relicChance>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<costList>
+            <FR_Origin_Unit>9000</FR_Origin_Unit>
+            <FR_Origin_AlloySteel>20</FR_Origin_AlloySteel>
+            <FR_Origin_EnchantSilk>40</FR_Origin_EnchantSilk>
+		</costList>
+		<tools>
+			<li>
+        		<label>手术</label>
+        		<capacities>
+          			<li>Heal_Cut</li>
+        		</capacities>
+        		<power>1</power>
+        		<armorPenetration>1</armorPenetration>
+        		<cooldownTime>2</cooldownTime>
+        		<chanceFactor>20</chanceFactor>
+      		</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

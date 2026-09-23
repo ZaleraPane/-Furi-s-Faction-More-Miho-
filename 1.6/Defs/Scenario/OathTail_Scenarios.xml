@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef ParentName="ScenarioBase">
+    <defName>Furi_OathTail_Scenarios</defName>
+    <label>誓约之尾边缘行迹</label>
+    <description>该剧本将以氷玥 T1 级别的角色开始游戏，游戏将会变得非常简单。\n\n适合用来种地，极不推荐追求挑战的玩家。\n\n\n\n我的天哪是神狐和仙狐大人，我们有救辣！</description>
+    <scenario>
+        <showInUI>true</showInUI>
+
+        <summary>两只御狐：神狐和仙狐来到了边缘世界。</summary>
+        <playerFaction Inherit="false">
+            <def>PlayerFaction</def>
+            <factionDef>FR_Faction_Player</factionDef>
+        </playerFaction>
+        <parts>
+
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>2</pawnChoiceCount>
+          <kindCounts>
+            <li>
+              <kindDef>FR_TheOathTail_Alpha</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+            <li>
+              <kindDef>FR_TheOathTail_Beta</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+        
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        </parts>
+    </scenario>
+    </ScenarioDef>
+
+</Defs>

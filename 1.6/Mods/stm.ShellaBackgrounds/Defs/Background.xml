@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <ShellaBackgrounds.Shella_BackgroundDef>
+		<defName>KetsFuriBG</defName>
+		<backgroundPath>MenuBG_KetsFuri</backgroundPath>
+		<isDLC>false</isDLC>
+	</ShellaBackgrounds.Shella_BackgroundDef>
+</Defs>

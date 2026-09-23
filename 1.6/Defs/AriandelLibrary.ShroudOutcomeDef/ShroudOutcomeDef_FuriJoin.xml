@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AriandelLibrary.ShroudOutcomeDef>
+    <defName>AL_Outcome_Join_Furi</defName>
+    <label>Furi join？</label>
+    <description>{0} has returned.</description>
+    <workerClass>AriandelLibrary.ShroudOutcome_Generator</workerClass>
+    <letterMode>PositiveEvent</letterMode>
+    <qualityRange>0.2~1.0</qualityRange>
+    <weight>40</weight>
+    <isBadOutcome>false</isBadOutcome>
+    <isUnique>false</isUnique>
+    <minRefireDays>0</minRefireDays>
+
+    <pawnList>
+      <li>
+        <pawnkindDefName>Furi_PawnBase1</pawnkindDefName>
+        <probability>1</probability>
+        <independentProbability>true</independentProbability>
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>一名符漓平民加入。</pawnDescription>
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+      <li>
+        <pawnkindDefName>Furi_PawnBase2</pawnkindDefName>
+        <probability>0.1</probability>
+        <independentProbability>true</independentProbability>
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>一名符漓巫女加入。</pawnDescription>
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+      <li>
+        <pawnkindDefName>Furi_PawnBase3</pawnkindDefName>
+        <probability>0.4</probability>
+        <independentProbability>true</independentProbability>
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>一名符漓民兵加入。</pawnDescription>
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+      <li>
+        <pawnkindDefName>Furi_PawnBase4</pawnkindDefName>
+        <probability>0.1</probability>
+        <independentProbability>true</independentProbability>
+        <spawnRule>Colonist</spawnRule>
+        <pawnDescription>一名符漓军卒加入。</pawnDescription>
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+    </pawnList>
+    <thingList>
+      <li>
+        <thingDefName>ShroudLevelThing</thingDefName>
+        <count>1</count>
+        <probability>0.2</probability>
+        <independentProbability>true</independentProbability>
+        <spawnRule>TradeSpot</spawnRule>
+        <thingDescription>似乎有什么别的东西。</thingDescription>
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+      <li>
+        <thingDefName>ShroudLevelThing</thingDefName>
+        <count>1</count>
+        <probability>0.2</probability>
+        <independentProbability>true</independentProbability>
+        <spawnRule>TradeSpot</spawnRule>
+        <thingDescription>似乎有什么别的东西。</thingDescription>
+        <fireAfterTicks>0</fireAfterTicks>
+      </li>
+    </thingList>
+
+    <comps>
+    </comps>
+  </AriandelLibrary.ShroudOutcomeDef>
+
+</Defs>

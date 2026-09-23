@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef>
+        <defName>Furi_TheOath</defName>
+        <label>誓约之尾</label>
+        <description>侍主之心，和光同尘。</description>
+        <defaultLabelColor>(255,190,150)</defaultLabelColor>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <stages>
+        <li>
+			<becomeVisible>false</becomeVisible>
+            <statOffsets>
+                <PsychicEntropyRecoveryRate>5.2</PsychicEntropyRecoveryRate>
+                <PsychicEntropyMax>520</PsychicEntropyMax>
+                <WorkSpeedGlobal>1.3</WorkSpeedGlobal>
+                <Fertility>-5.2</Fertility>
+                <AL_ShroudPotential>5.2</AL_ShroudPotential>
+                <AL_CastShroudWarmUpFactor>-0.14</AL_CastShroudWarmUpFactor>
+            </statOffsets>
+            <statFactors>
+                <ImmunityGainSpeed>13.14</ImmunityGainSpeed>
+                <InjuryHealingFactor>13.14</InjuryHealingFactor>
+                <MeleeDamageFactor>1.4</MeleeDamageFactor>
+            </statFactors>
+            <regeneration>13145</regeneration>
+        </li>
+        </stages>
+    </HediffDef>
+</Defs>

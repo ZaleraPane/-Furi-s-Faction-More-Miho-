@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityGroupDef>
+        <defName>Miho_OriginPolaris</defName>
+        <cooldownTicks>120</cooldownTicks>
+    </AbilityGroupDef>
+
+	<AbilityGroupDef>
+        <defName>Miho_Origin_Adept</defName>
+        <cooldownTicks>120</cooldownTicks>
+    </AbilityGroupDef>
+
+	<AbilityGroupDef>
+        <defName>Miho_OriginStarfall</defName>
+        <cooldownTicks>120</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityDef ParentName="MihoPsycastBase">
+		<defName>Miho_Ability_OriginPolaris</defName>
+		<label>源素轰击</label>
+		<aiCanUse>true</aiCanUse>
+		<description>生成一颗注入源素的秘灵陨星，轰击目标。</description>
+		<iconPath>Icon/Abilities/MihoPolaris</iconPath>
+		<writeCombatLog>true</writeCombatLog>
+		<groupDef>Miho_OriginPolaris</groupDef>
+		<statBases>
+			<Ability_PsyfocusCost>0.052</Ability_PsyfocusCost>
+            <Ability_EntropyGain>52</Ability_EntropyGain>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0</warmupTime>
+			<range>131.4</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetLocations>true</canTargetLocations>
+                <canTargetBuildings>true</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetMechs>true</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>MihoPolaris_OriginProj</projectileDef>
+			</li>
+            <li Class="AriandelLibrary.CompProperties_AbilityOnlyPawnKind">
+                <pawnKinds>
+                    <li>FR_TheOathTail_Alpha</li>
+                    <li>FR_TheOathTail_Beta</li>
+                    <li>FR_KT_Imperatofu</li>
+                    <li>FR_KT_Imperasofu</li>
+                </pawnKinds>
+            </li>
+		</comps>
+	</AbilityDef>
+
+    <ThingDef ParentName="BaseBullet">
+		<defName>MihoPolaris_OriginProj</defName>
+		<label>源素轰击</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Miho_MagicBombPolaris</damageDef>
+			<damageAmountBase>131.4</damageAmountBase>
+			<armorPenetrationBase>1.314</armorPenetrationBase>
+			<stoppingPower>5.2</stoppingPower>
+			<speed>520</speed>
+			<explosionRadius>0.52</explosionRadius>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>true</flyOverhead>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<preExplosionSpawnThingDef>Miho_SKYIncomingPolaris</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicCirclePolarisProj</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <AbilityDef ParentName="MihoPsycastBase">
+		<defName>Miho_Ability_Origin_Adept</defName>
+		<label>源素箭雨</label>
+		<aiCanUse>true</aiCanUse>
+		<description>召唤数十支注入源素的秘灵箭，向敌人攻去。</description>
+		<iconPath>Icon/Abilities/MihoFireArrows</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<groupDef>Miho_Origin_Adept</groupDef>
+		<statBases>
+			<Ability_PsyfocusCost>0.1314</Ability_PsyfocusCost>
+            <Ability_EntropyGain>131.4</Ability_EntropyGain>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0</warmupTime>
+			<range>131.4</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetLocations>true</canTargetLocations>
+                <canTargetBuildings>true</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetMechs>true</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Miho_Origin_Adept_Proj</projectileDef>
+			</li>
+            <li Class="AriandelLibrary.CompProperties_AbilityOnlyPawnKind">
+                <pawnKinds>
+                    <li>FR_TheOathTail_Alpha</li>
+                    <li>FR_TheOathTail_Beta</li>
+                    <li>FR_KT_Imperatofu</li>
+                    <li>FR_KT_Imperasofu</li>
+                </pawnKinds>
+            </li>
+		</comps>
+	</AbilityDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Origin_Adept_Proj</defName>
+		<label>源素剑雨</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<drawSize>1.3</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>MihoLib.Projectile_Explosive_Fragment</thingClass>
+		<projectile Class="MihoLib.ProjectileProperties_fragment">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>131.4</damageAmountBase>
+			<armorPenetrationBase>1.314</armorPenetrationBase>
+            <stoppingPower>5.2</stoppingPower>
+			<speed>520</speed>
+			<explosionRadius>0.52</explosionRadius>
+			<alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>true</flyOverhead>
+			<preExplosionSpawnThingDef>Miho_SKYIncomingSmallArrow</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<fragmentDef>Miho_Fireball_Adept_ProjSub</fragmentDef>
+			<fragmentCount>29</fragmentCount>
+			<fragmentRange>
+				<max>4</max>
+				<min>1</min>
+			</fragmentRange>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicCircle_Big</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <AbilityDef ParentName="MihoPsycastBase">
+		<defName>Miho_Ability_OriginStarfall</defName>		
+		<label>源素陨星</label>
+		<aiCanUse>true</aiCanUse>
+		<description>生成若干注入源素的秘灵陨星，进行饱和式打击。</description>
+		<iconPath>Icon/Abilities/MihoStarfall</iconPath>
+		<writeCombatLog>True</writeCombatLog>
+		<groupDef>Miho_OriginStarfall</groupDef>
+		<statBases>
+			<Ability_PsyfocusCost>0.52</Ability_PsyfocusCost>
+            <Ability_EntropyGain>520</Ability_EntropyGain>
+		</statBases>
+		<verbProperties>
+			<warmupTime>0</warmupTime>
+			<range>131.4</range>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetLocations>true</canTargetLocations>
+                <canTargetBuildings>true</canTargetBuildings>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetMechs>true</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>Miho_Ability_OriginStarfall_Proj</projectileDef>
+			</li>
+            <li Class="AriandelLibrary.CompProperties_AbilityOnlyPawnKind">
+                <pawnKinds>
+                    <li>FR_TheOathTail_Alpha</li>
+                    <li>FR_TheOathTail_Beta</li>
+                    <li>FR_KT_Imperatofu</li>
+                    <li>FR_KT_Imperasofu</li>
+                </pawnKinds>
+            </li>
+		</comps>
+	</AbilityDef>
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Miho_Ability_OriginStarfall_Proj</defName>		
+		<label>starfall</label>
+		<graphicData>
+			<texPath>Things/Fleck/Fragment</texPath>
+			<drawSize>1.3</drawSize>
+
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>MihoLib.Projectile_Explosive_Fragment</thingClass>
+		<projectile Class="MihoLib.ProjectileProperties_fragment">
+			<damageDef>MihoGunshot</damageDef>
+            <damageAmountBase>131.4</damageAmountBase>
+			<armorPenetrationBase>1.314</armorPenetrationBase>
+            <stoppingPower>5.2</stoppingPower>
+			<speed>520</speed>
+			<explosionRadius>0.52</explosionRadius>
+            <alwaysFreeIntercept>false</alwaysFreeIntercept>
+			<flyOverhead>true</flyOverhead>
+			<preExplosionSpawnThingDef>Miho_SKYIncoming</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<fragmentDef>Miho_Ability_Starfall_ProjSub</fragmentDef>
+			<fragmentCount>13</fragmentCount>
+			<fragmentRange>
+				<max>4</max>
+				<min>1</min>
+			</fragmentRange>
+		</projectile>
+		<comps>
+			<li Class="CompProperties_ProjectileEffecter">
+				<effecterDef>Miho_MagicCircle_Big</effecterDef>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

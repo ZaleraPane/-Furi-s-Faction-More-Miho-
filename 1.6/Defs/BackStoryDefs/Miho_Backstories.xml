@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Tag1 公民 -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory1</defName>
+		<title>符漓 拓荒者</title>
+		<titleShort>拓荒者</titleShort>
+		<description>[PAWN_nameDef]作为一名拓荒者来到了边缘世界。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>4</Melee>
+			<Construction>4</Construction>
+			<Animals>4</Animals>
+			<Plants>6</Plants>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory2</defName>
+		<title>符漓 设计师</title>
+		<titleShort>设计师</titleShort>
+		<description>[PAWN_nameDef]成为了一名设计师，并接取了一份边缘世界的任务。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Artistic>6</Artistic>
+			<Crafting>4</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory3</defName>
+		<title>符漓 工程师</title>
+		<titleShort>工程师</titleShort>
+		<description>[PAWN_nameDef]从学院毕业后成为了一名工程师</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Construction>6</Construction>
+			<Artistic>2</Artistic>
+			<Crafting>2</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+	
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory4</defName>
+		<title>符漓 教师</title>
+		<titleShort>教师</titleShort>
+		<description>[PAWN_nameDef]来到了边缘世界，为这里的教育事业付出自己的一份力。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Social>8</Social>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory5</defName>
+		<title>符漓 生物学家</title>
+		<titleShort>生物学家</titleShort>
+		<description>[PAWN_nameDef]听说了边缘世界，便前来研究这里的生物。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Animals>4</Animals>
+			<Plants>4</Plants>
+			<Intellectual>10</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory6</defName>
+		<title>符漓 大厨</title>
+		<titleShort>大厨</titleShort>
+		<description>[PAWN_nameDef]在边缘世界开了一家小餐馆，生意火爆。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Cooking>8</Cooking>
+			<Plants>2</Plants>
+			<Artistic>4</Artistic>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory7</defName>
+		<title>符漓 艺术家</title>
+		<titleShort>艺术家</titleShort>
+		<description>[PAWN_nameDef]来到了边缘世界寻找新的创作灵感。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Artistic>8</Artistic>
+			<Crafting>6</Crafting>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- Tag2 民兵 -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory8</defName>
+		<title>符漓 军医</title>
+		<titleShort>军医</titleShort>
+		<description>[PAWN_nameDef]来到了边缘世界为其他同胞治疗。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Medicine>8</Medicine>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory9</defName>
+		<title>符漓 民兵</title>
+		<titleShort>民兵</titleShort>
+		<description>[PAWN_nameDef]来到了边缘世界并成为了一名民兵。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>6</Melee>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory10</defName>
+		<title>符漓 猎手</title>
+		<titleShort>猎手</titleShort>
+		<description>[PAWN_nameDef]是一名猎手，猎杀野兽，也猎杀敌人。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>4</Melee>
+			<Animals>4</Animals>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- Tag3 远程 -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory11</defName>
+		<title>符漓 兵卒</title>
+		<titleShort>兵卒</titleShort>
+		<description>[PAWN_nameDef]是一名普通士兵，接受过严格的训练。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>6</Melee>
+			<Medicine>4</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag3</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory12</defName>
+		<title>符漓 狙击手</title>
+		<titleShort>狙击手</titleShort>
+		<description>[PAWN_nameDef]是一名军事素养极高的狙击手，射击能力极强。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>12</Shooting>
+			<Melee>4</Melee>
+			<Medicine>4</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag3</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory13</defName>
+		<title>符漓 炮手</title>
+		<titleShort>炮手</titleShort>
+		<description>[PAWN_nameDef]是一名专业炮手，可以提供有效火力支援。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Shooting>10</Shooting>
+			<Melee>4</Melee>
+			<Medicine>4</Medicine>
+			<Social>2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag3</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- Tag4 近战 -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory14</defName>
+		<title>符漓 战士</title>
+		<titleShort>战士</titleShort>
+		<description>[PAWN_nameDef]是一名铁血战士，格斗技能强悍。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>10</Melee>
+			<Medicine>4</Medicine>
+			<Social>2</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag4</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory15</defName>
+		<title>符漓 士官</title>
+		<titleShort>士官</titleShort>
+		<description>[PAWN_nameDef]是一名士官，常指挥自己的小队带头冲锋。</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>12</Melee>
+			<Shooting>6</Shooting>
+			<Medicine>4</Medicine>
+			<Social>4</Social>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag4</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory16</defName>
+		<title>符漓 指挥官</title>
+		<titleShort>指挥官</titleShort>
+		<description>[PAWN_nameDef]是一名指挥官，战机洞察力敏锐，个人战斗力也很优秀</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>12</Melee>
+			<Shooting>4</Shooting>
+			<Medicine>4</Medicine>
+			<Social>8</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag4</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstory17</defName>
+		<title>符漓 近卫</title>
+		<titleShort>近卫</titleShort>
+		<description>[PAWN_nameDef]是一名精锐战士，各方面能力远超普通士兵</description>
+		<slot>Adulthood</slot>
+		<skillGains>
+			<Melee>16</Melee>
+			<Medicine>8</Medicine>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstory_Tag4</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

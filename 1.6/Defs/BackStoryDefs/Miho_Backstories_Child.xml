@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Tag1 战时老兵 -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild1</defName>
+		<title>符漓 革命童子</title>
+		<titleShort>革命童子</titleShort>
+		<description>[PAWN_nameDef]出生于氷玥革命战争时期，在革命战争中长大。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>8</Melee>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild2</defName>
+		<title>符漓 革命遗孤</title>
+		<titleShort>革命遗孤</titleShort>
+		<description>[PAWN_nameDef]出生于氷玥革命战争时期，父母英勇牺牲，由根据地其他同志抚养长大。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>6</Melee>
+			<Medicine>4</Medicine>
+			<Social>4</Social>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild3</defName>
+		<title>符漓 护国童子</title>
+		<titleShort>护国童子</titleShort>
+		<description>[PAWN_nameDef]出生于氷玥护国战争时期，从小就有一颗爱国心。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Crafting>6</Crafting>
+			<Construction>4</Construction>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild4</defName>
+		<title>符漓 护国遗孤</title>
+		<titleShort>护国遗孤</titleShort>
+		<description>[PAWN_nameDef]出生于氷玥护国战争时期，父母英勇牺牲，由村里的家人们抚养长大。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Crafting>6</Crafting>
+			<Construction>4</Construction>
+			<Social>4</Social>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag1</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- Tag2 和平时代 -->
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild5</defName>
+		<title>符漓 乡村儿童</title>
+		<titleShort>乡村儿童</titleShort>
+		<description>[PAWN_nameDef]出生于一个小村子，有慈爱的父母，善良的乡邻，有一个幸福的童年。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Animals>4</Animals>
+			<Plants>6</Plants>
+			<Social>4</Social>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild6</defName>
+		<title>符漓 城镇儿童</title>
+		<titleShort>城镇儿童</titleShort>
+		<description>[PAWN_nameDef]出生于一个城镇，接受过一些教育，童年美满。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Crafting>4</Crafting>
+			<Artistic>4</Artistic>
+			<Social>4</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild7</defName>
+		<title>符漓 城市儿童</title>
+		<titleShort>城市儿童</titleShort>
+		<description>[PAWN_nameDef]出生于一座城市，是一名学院学生，童年在学院生活中度过。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>2</Melee>
+			<Crafting>4</Crafting>
+			<Artistic>2</Artistic>
+			<Social>4</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild8</defName>
+		<title>符漓 学徒</title>
+		<titleShort>学徒</titleShort>
+		<description>[PAWN_nameDef]小时候是一名学徒，跟随师傅学习技术。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>6</Construction>
+			<Crafting>6</Crafting>
+			<Artistic>2</Artistic>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild9</defName>
+		<title>符漓 都市儿童</title>
+		<titleShort>都市儿童</titleShort>
+		<description>[PAWN_nameDef]出生于氷玥首都，从小便接受最好的教育，见识也比其他孩子更广。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Artistic>6</Artistic>
+			<Crafting>6</Crafting>
+			<Medicine>4</Medicine>
+			<Social>6</Social>
+			<Intellectual>6</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild10</defName>
+		<title>符漓 星空之子</title>
+		<titleShort>星空之子</titleShort>
+		<description>[PAWN_nameDef]出生于氷玥的星舰上，向往着星辰大海。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Artistic>8</Artistic>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag2</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<!-- Tag3 军官出生 -->
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild11</defName>
+		<title>符漓 军校学生</title>
+		<titleShort>军校学生</titleShort>
+		<description>[PAWN_nameDef]从小便进入军校学习，是一名光荣的战士。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>8</Shooting>
+			<Melee>8</Melee>
+			<Social>4</Social>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag3</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild12</defName>
+		<title>符漓 都市学员</title>
+		<titleShort>都市学员</titleShort>
+		<description>[PAWN_nameDef]从小便进入首都学府学习，是一名优秀的毕业生。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>8</Melee>
+			<Social>6</Social>
+			<Construction>4</Construction>
+			<Crafting>6</Crafting>
+			<Medicine>4</Medicine>
+			<Intellectual>8</Intellectual>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag3</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+	<AlienRace.AlienBackstoryDef>
+		<defName>FR_Miho_BaseBackstoryChild13</defName>
+		<title>符漓 星舰学生</title>
+		<titleShort>星舰学生</titleShort>
+		<description>[PAWN_nameDef]从小接受星舰相关教育，未来会进入星舰工作。</description>
+		<slot>Childhood</slot>
+		<skillGains>
+			<Construction>4</Construction>
+			<Crafting>4</Crafting>
+			<Social>4</Social>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<disallowedTraitsChance>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+		</disallowedTraitsChance>
+		<spawnCategories>
+			<li>FR_Miho_BaseBackstoryChild_Tag3</li>
+		</spawnCategories>
+		<possessions>
+		</possessions>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeMale>Thin</bodyTypeMale>
+	</AlienRace.AlienBackstoryDef>
+
+</Defs>

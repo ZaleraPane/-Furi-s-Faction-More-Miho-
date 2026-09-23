@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Miho"]/alienRace/raceRestriction/apparelList</xpath>
+    <value>
+      <li>FR_OathTail_Uniform</li>
+      <li>FR_OathTail_Uniform_Miho</li>
+      <li>FR_Miho_SpecialMaid</li>
+    </value>
+  </Operation>
+
+</Patch>

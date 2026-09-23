@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 玩家派系 -->
+   <FactionDef ParentName="PlayerFactionBase">
+		<defName>FR_Faction_Player</defName>
+		<label>氷玥帝国边缘世界据点</label>
+		<description>氷玥帝国在边缘世界的一个据点。</description>
+		<categoryTag>FR_Faction_Player</categoryTag>
+		<colorSpectrum>
+			<li>(255,255,255)</li>
+		</colorSpectrum>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>Furi_PawnBase2</basicMemberKind>
+		<pawnSingular>符漓</pawnSingular>
+		<pawnsPlural>符漓</pawnsPlural>
+		<techLevel>Ultra</techLevel>
+		<allowedCultures>
+			<li>Furi_Culture</li>
+		</allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+		</disallowedMemes>
+		<backstoryFilters>
+			<li>
+                <categoriesChildhood>
+                    <li>FR_Miho_BaseBackstoryChild_Tag1</li>
+                    <li>FR_Miho_BaseBackstoryChild_Tag2</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>FR_Miho_BaseBackstory_Tag1</li>
+                </categoriesAdulthood>
+            </li>
+		</backstoryFilters>
+		<factionIconPath>Faction/Furi_FactionIcon</factionIconPath>
+		<factionNameMaker>Furi_Faction_FNamePlayer</factionNameMaker>
+		<playerInitialSettlementNameMaker>Furi_Faction_TNamePlayer</playerInitialSettlementNameMaker>
+		<settlementNameMaker>Furi_Faction_TNamePlayer</settlementNameMaker>
+		<startingResearchTags>
+			<li>Furi_StartTech</li>
+			<li>ClassicStart</li>
+			<li MayRequire="Ancot.MiliraRace">MiliraRefugeeStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>Furi_StartTech</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+            <thingDefs>
+                <li>FR_Origin_Silk</li>
+                <li>FR_Origin_Steel</li>
+                <li>FR_Origin_RefinedSteel</li>
+            </thingDefs>
+        </apparelStuffFilter>
+	</FactionDef>
+
+
+  
+</Defs>

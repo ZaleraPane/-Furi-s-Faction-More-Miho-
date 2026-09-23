@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="MealBase">
+		<defName>FR_IdentityThing_MCW_BloodMiho</defName>
+		<label>神秘大头</label>
+		<description>让厖朝雯使用以将其注册进特殊角色管理器。</description>
+		<graphicData>
+			<texPath>FRSpecialCharacter/Icon/MCW_BloodMiho</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1</MarketValue>
+			<Nutrition>1.0</Nutrition>
+			<WorkToMake>100</WorkToMake>
+			<Mass>0.01</Mass>
+		</statBases>
+		<ingestible>
+			<preferability>MealLavish</preferability>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>FR_Identity_MCW_BloodMiho</hediffDef>
+					<severity>1.0</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

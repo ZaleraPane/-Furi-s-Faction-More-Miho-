@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/PawnKindDef[defName="FoxPawnBase4"]</xpath>
+    <value>
+        <modExtensions>
+            <li Class="AriandelLibrary.NPCKindTag">
+                <npcTag>MCW_BloodMiho</npcTag>
+            </li>
+            <li Class="AriandelLibrary.SpecialPawnExtension">
+                <uniqueID>MCW_BloodMiho</uniqueID>
+                <tabDef>AL_Miho_Tab</tabDef>
+                <iconPathRecruited>FRSpecialCharacter/Icon/MCW_BloodMiho</iconPathRecruited>
+                <labelKey>MCW_BloodMiho.label</labelKey>
+                <descKey>MCW_BloodMiho.desc</descKey>
+                <normalCooldownTicks>30000</normalCooldownTicks>
+                <resurrectCooldownTicks>30000</resurrectCooldownTicks>
+                <order>100</order>
+            </li>
+            <li Class="AriandelLibrary.AL_Kill_Manager_Extension" />
+        </modExtensions>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>FR_IdentityThing_MCW_BloodMiho</thingDef>
+                    <countRange><min>1</min><max>1</max></countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </value>
+  </Operation>
+
+</Patch>
