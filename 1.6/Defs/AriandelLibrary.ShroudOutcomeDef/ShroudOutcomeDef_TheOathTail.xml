@@ -3,7 +3,7 @@
 
   <AriandelLibrary.ShroudOutcomeDef>
     <defName>AL_Outcome_Join_Kazuk</defName>
-    <label>召唤神狐</label>
+    <label>Summon the Divine Fox</label>
     <description>{0} has returned.</description>
     <workerClass>AriandelLibrary.ShroudOutcome_Generator</workerClass>
     <letterMode>PositiveEvent</letterMode>
@@ -21,7 +21,7 @@
         <shouldBeRegistered>true</shouldBeRegistered>
         
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>我的天哪是神狐大人</pawnDescription>
+        <pawnDescription>Oh my gosh, it’s the Divine Fox Lord!</pawnDescription>
         
         <fireAfterTicks>0</fireAfterTicks>
       </li>
@@ -33,7 +33,7 @@
 
   <AriandelLibrary.ShroudOutcomeDef>
     <defName>AL_Outcome_Join_Sezuk</defName>
-    <label>召唤仙狐</label>
+    <label>Summon the Immortal Fox</label>
     <description>{0} has returned.</description>
     <workerClass>AriandelLibrary.ShroudOutcome_Generator</workerClass>
     <letterMode>PositiveEvent</letterMode>
@@ -51,7 +51,7 @@
         <shouldBeRegistered>true</shouldBeRegistered>
         
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>我的天哪是仙狐大人</pawnDescription>
+        <pawnDescription>Oh my gosh, it’s the Immortal Fox Lord!</pawnDescription>
         
         <fireAfterTicks>0</fireAfterTicks>
       </li>
