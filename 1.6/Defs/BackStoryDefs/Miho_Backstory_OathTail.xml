@@ -4,15 +4,15 @@
 	<!-- The Oath Tail  -->
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryChild_OathTail_Alpha</defName>
-		<title>御狐 誓约之尾</title>
-		<titleShort>誓约之尾</titleShort>
-		<description>[PAWN_nameDef]本体是主人符皇的佩刀，与主人有着深厚的情谊，主人遂赐同姓。</description>
+		<title>Guardian Fox: Oath Tail</title>
+		<titleShort>Oath Tail</titleShort>
+		<description>[PAWN_nameDef] was the wielder's ceremonial blade, bound by a deep bond with their master. The master, in turn, bestowed upon them the same family name.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>7</Shooting>
 			<Melee>14</Melee>
 			<Cooking>7</Cooking>
-            <Construction>12</Construction>
+			<Construction>12</Construction>
 			<Artistic>9</Artistic>
 			<Crafting>12</Crafting>
 			<Medicine>7</Medicine>
@@ -30,15 +30,15 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryAdult_OathTail_Alpha</defName>
-		<title>御狐 侍主神狐</title>
-		<titleShort>侍主神狐</titleShort>
-		<description>[PAWN_nameDef]作为御狐与主人形影不离，侍奉左右，即使主人并不需要自己的保护。</description>
+		<title>Guardian Fox: Servant of the Master</title>
+		<titleShort>Servant of the Master</titleShort>
+		<description>[PAWN_nameDef] remained close to their master as a guardian fox, attending their every need, even when the master did not require protection.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Shooting>7</Shooting>
 			<Melee>16</Melee>
 			<Cooking>12</Cooking>
-            <Construction>14</Construction>
+			<Construction>14</Construction>
 			<Artistic>14</Artistic>
 			<Crafting>14</Crafting>
 			<Medicine>7</Medicine>
@@ -61,15 +61,15 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryChild_OathTail_Beta</defName>
-		<title>御狐 誓约之尾</title>
-		<titleShort>誓约之尾</titleShort>
-		<description>[PAWN_nameDef]本体是主人符皇的佩刀，与主人有着深厚的情谊，主人遂赐同姓。</description>
+		<title>Guardian Fox: Oath Tail</title>
+		<titleShort>Oath Tail</titleShort>
+		<description>[PAWN_nameDef] was the wielder's ceremonial blade, bound by a deep bond with their master. The master, in turn, bestowed upon them the same family name.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>7</Shooting>
 			<Melee>14</Melee>
 			<Cooking>12</Cooking>
-            <Construction>12</Construction>
+			<Construction>12</Construction>
 			<Artistic>7</Artistic>
 			<Crafting>12</Crafting>
 			<Medicine>4</Medicine>
@@ -87,15 +87,15 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryAdult_OathTail_Beta</defName>
-		<title>御狐 侍主仙狐</title>
-		<titleShort>侍主仙狐</titleShort>
-		<description>[PAWN_nameDef]作为御狐与主人形影不离，侍奉左右，即使主人并不需要自己的保护。</description>
+		<title>Guardian Fox: Servant of the Immortal</title>
+		<titleShort>Servant of the Immortal</titleShort>
+		<description>[PAWN_nameDef] remained close to their master as a guardian fox, attending their every need, even when the master did not require protection.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Shooting>7</Shooting>
 			<Melee>16</Melee>
 			<Cooking>14</Cooking>
-            <Construction>14</Construction>
+			<Construction>14</Construction>
 			<Artistic>12</Artistic>
 			<Crafting>14</Crafting>
 			<Medicine>7</Medicine>
