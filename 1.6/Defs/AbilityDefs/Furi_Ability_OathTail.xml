@@ -18,7 +18,7 @@
 
     <AbilityDef ParentName="MihoPsycastBase">
 		<defName>Miho_Ability_OriginPolaris</defName>
-		<label>源素轰击</label>
+		<label>Elemental Bombardment</label>
 		<aiCanUse>true</aiCanUse>
 		<description>生成一颗注入源素的秘灵陨星，轰击目标。</description>
 		<iconPath>Icon/Abilities/MihoPolaris</iconPath>
