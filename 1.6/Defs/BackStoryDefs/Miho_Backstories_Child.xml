@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- Tag1 战时老兵 -->
+	<!-- Tag1 Wartime veterans -->
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild1</defName>
-		<title>符漓 革命童子</title>
-		<titleShort>革命童子</titleShort>
-		<description>[PAWN_nameDef]出生于氷玥革命战争时期，在革命战争中长大。</description>
+		<title>Furi Revolutionary Child</title>
+		<titleShort>Revolutionary Child</titleShort>
+		<description>[PAWN_nameDef] was born during the Ice Moon Revolutionary War and grew up amid the conflict.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>6</Shooting>
@@ -29,9 +29,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild2</defName>
-		<title>符漓 革命遗孤</title>
-		<titleShort>革命遗孤</titleShort>
-		<description>[PAWN_nameDef]出生于氷玥革命战争时期，父母英勇牺牲，由根据地其他同志抚养长大。</description>
+		<title>Furi Revolutionary Orphan</title>
+		<titleShort>Revolutionary Orphan</titleShort>
+		<description>[PAWN_nameDef] was born during the Ice Moon Revolutionary War. Their parents died heroically, and they were raised by other comrades in the base area.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -55,9 +55,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild3</defName>
-		<title>符漓 护国童子</title>
-		<titleShort>护国童子</titleShort>
-		<description>[PAWN_nameDef]出生于氷玥护国战争时期，从小就有一颗爱国心。</description>
+		<title>Furi Patriot Child</title>
+		<titleShort>Patriot Child</titleShort>
+		<description>[PAWN_nameDef] was born during the Ice Moon National Defense War and has had a patriotic heart since childhood.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -81,9 +81,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild4</defName>
-		<title>符漓 护国遗孤</title>
-		<titleShort>护国遗孤</titleShort>
-		<description>[PAWN_nameDef]出生于氷玥护国战争时期，父母英勇牺牲，由村里的家人们抚养长大。</description>
+		<title>Furi Patriot Orphan</title>
+		<titleShort>Patriot Orphan</titleShort>
+		<description>[PAWN_nameDef] was born during the Ice Moon National Defense War. Their parents died heroically, and they were raised by the villagers.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>2</Shooting>
@@ -106,12 +106,12 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 	</AlienRace.AlienBackstoryDef>
 
-	<!-- Tag2 和平时代 -->
+	<!-- Tag2 Peaceful era -->
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild5</defName>
-		<title>符漓 乡村儿童</title>
-		<titleShort>乡村儿童</titleShort>
-		<description>[PAWN_nameDef]出生于一个小村子，有慈爱的父母，善良的乡邻，有一个幸福的童年。</description>
+		<title>Furi Village Child</title>
+		<titleShort>Village Child</titleShort>
+		<description>[PAWN_nameDef] was born in a small village, with loving parents, kind neighbors, and a happy childhood.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Cooking>4</Cooking>
@@ -135,9 +135,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild6</defName>
-		<title>符漓 城镇儿童</title>
-		<titleShort>城镇儿童</titleShort>
-		<description>[PAWN_nameDef]出生于一个城镇，接受过一些教育，童年美满。</description>
+		<title>Furi Town Child</title>
+		<titleShort>Town Child</titleShort>
+		<description>[PAWN_nameDef] was born in a town, received some education, and had a happy childhood.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Crafting>4</Crafting>
@@ -161,9 +161,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild7</defName>
-		<title>符漓 城市儿童</title>
-		<titleShort>城市儿童</titleShort>
-		<description>[PAWN_nameDef]出生于一座城市，是一名学院学生，童年在学院生活中度过。</description>
+		<title>Furi City Child</title>
+		<titleShort>City Child</titleShort>
+		<description>[PAWN_nameDef] was born in a city and was a college student, spending childhood in the academy.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>2</Shooting>
@@ -189,9 +189,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild8</defName>
-		<title>符漓 学徒</title>
-		<titleShort>学徒</titleShort>
-		<description>[PAWN_nameDef]小时候是一名学徒，跟随师傅学习技术。</description>
+		<title>Furi Apprentice</title>
+		<titleShort>Apprentice</titleShort>
+		<description>[PAWN_nameDef] was an apprentice as a child and learned skills by following a master.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Construction>6</Construction>
@@ -215,9 +215,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild9</defName>
-		<title>符漓 都市儿童</title>
-		<titleShort>都市儿童</titleShort>
-		<description>[PAWN_nameDef]出生于氷玥首都，从小便接受最好的教育，见识也比其他孩子更广。</description>
+		<title>Furi Metropolis Child</title>
+		<titleShort>Metropolis Child</titleShort>
+		<description>[PAWN_nameDef] was born in the capital of Ice Moon and received the best education since childhood, giving them broader knowledge than other children.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Construction>4</Construction>
@@ -243,9 +243,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild10</defName>
-		<title>符漓 星空之子</title>
-		<titleShort>星空之子</titleShort>
-		<description>[PAWN_nameDef]出生于氷玥的星舰上，向往着星辰大海。</description>
+		<title>Furi Child of the Stars</title>
+		<titleShort>Child of the Stars</titleShort>
+		<description>[PAWN_nameDef] was born on an Ice Moon starship and dreamed of the vastness of the stars.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Artistic>8</Artistic>
@@ -265,13 +265,13 @@
 		<bodyTypeMale>Thin</bodyTypeMale>
 	</AlienRace.AlienBackstoryDef>
 
-	<!-- Tag3 军官出生 -->
+	<!-- Tag3 Officer-born -->
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild11</defName>
-		<title>符漓 军校学生</title>
-		<titleShort>军校学生</titleShort>
-		<description>[PAWN_nameDef]从小便进入军校学习，是一名光荣的战士。</description>
+		<title>Furi Military Academy Student</title>
+		<titleShort>Military Academy Student</titleShort>
+		<description>[PAWN_nameDef] entered a military academy from a young age and became a proud warrior.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>8</Shooting>
@@ -295,9 +295,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild12</defName>
-		<title>符漓 都市学员</title>
-		<titleShort>都市学员</titleShort>
-		<description>[PAWN_nameDef]从小便进入首都学府学习，是一名优秀的毕业生。</description>
+		<title>Furi Urban Cadet</title>
+		<titleShort>Urban Cadet</titleShort>
+		<description>[PAWN_nameDef] entered the capital academy from a young age and became an outstanding graduate.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>4</Shooting>
@@ -324,9 +324,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>FR_Miho_BaseBackstoryChild13</defName>
-		<title>符漓 星舰学生</title>
-		<titleShort>星舰学生</titleShort>
-		<description>[PAWN_nameDef]从小接受星舰相关教育，未来会进入星舰工作。</description>
+		<title>Furi Starship Student</title>
+		<titleShort>Starship Student</titleShort>
+		<description>[PAWN_nameDef] received starship-related education from childhood and will likely work aboard a starship in the future.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Construction>4</Construction>
