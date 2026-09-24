@@ -4,13 +4,13 @@
 	<!-- Deriven  -->
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryChild_Deriven_Tag</defName>
-		<title>美狐 教会修女</title>
-		<titleShort>教会修女</titleShort>
-		<description>[PAWN_nameDef]出生在一个虔诚的狐狐神教家庭，童年时被送往教会学校学习并成为了一名修女，她在教会里勤勤恳恳地学习教义和科学文化知识，狐狐修女们都很喜欢这个小不点。</description>
+		<title>Deriven Church Nun</title>
+		<titleShort>Church Nun</titleShort>
+		<description>[PAWN_nameDef] was born into a devout Fox Fox Church family. As a child, they were sent to church school and became a nun, diligently studying doctrine and scientific and cultural knowledge.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Cooking>7</Cooking>
-            <Plants>4</Plants>
+			<Plants>4</Plants>
 			<Artistic>7</Artistic>
 			<Crafting>7</Crafting>
 			<Medicine>4</Medicine>
@@ -28,13 +28,13 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryAdult_Deriven_Tag</defName>
-		<title>美狐 天使女仆</title>
-		<titleShort>天使女仆</titleShort>
-		<description>善良纯粹的[PAWN_nameDef]长大后以狐狐神教教会修女的身份作为医务人员加入了带有军事性质的狐狐女仆团，她照顾伤员总是非常用心，也因此金发的她被战友们亲切地称为金狐天使。</description>
+		<title>Deriven Angel Maid</title>
+		<titleShort>Angel Maid</titleShort>
+		<description>The kind and pure [PAWN_nameDef] grew up to serve as a medical officer in the military-style Fox Fox Maid Corps, taking on the role of a church nun. She always cared for the wounded with great devotion and became a gentle, dependable protector of the injured.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Cooking>7</Cooking>
-            <Plants>4</Plants>
+			<Plants>4</Plants>
 			<Artistic>4</Artistic>
 			<Crafting>7</Crafting>
 			<Medicine>12</Medicine>
