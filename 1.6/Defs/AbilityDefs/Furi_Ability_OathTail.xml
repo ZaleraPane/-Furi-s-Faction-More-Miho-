@@ -20,7 +20,7 @@
 		<defName>Miho_Ability_OriginPolaris</defName>
 		<label>Elemental Bombardment</label>
 		<aiCanUse>true</aiCanUse>
-		<description>生成一颗注入源素的秘灵陨星，轰击目标。</description>
+		<description>Generate an Element-infused Arcane Meteor to bombard the target.</description>
 		<iconPath>Icon/Abilities/MihoPolaris</iconPath>
 		<writeCombatLog>true</writeCombatLog>
 		<groupDef>Miho_OriginPolaris</groupDef>
@@ -57,7 +57,7 @@
 
     <ThingDef ParentName="BaseBullet">
 		<defName>MihoPolaris_OriginProj</defName>
-		<label>源素轰击</label>
+		<label>Elemental Bombardment</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Fleck/Fragment</texPath>
@@ -88,9 +88,9 @@
 
     <AbilityDef ParentName="MihoPsycastBase">
 		<defName>Miho_Ability_Origin_Adept</defName>
-		<label>源素箭雨</label>
+		<label>Elemental Arrow Rain</label>
 		<aiCanUse>true</aiCanUse>
-		<description>召唤数十支注入源素的秘灵箭，向敌人攻去。</description>
+		<description>Summon dozens of arcane spirit arrows infused with Source-element energy and launch them at the enemy.</description>
 		<iconPath>Icon/Abilities/MihoFireArrows</iconPath>
 		<writeCombatLog>True</writeCombatLog>
 		<groupDef>Miho_Origin_Adept</groupDef>
@@ -127,7 +127,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>Miho_Origin_Adept_Proj</defName>
-		<label>源素剑雨</label>
+		<label>Elemental Sword Rain</label>
 		<graphicData>
 			<texPath>Things/Fleck/Fragment</texPath>
 			<drawSize>1.3</drawSize>
@@ -161,9 +161,9 @@
 
     <AbilityDef ParentName="MihoPsycastBase">
 		<defName>Miho_Ability_OriginStarfall</defName>		
-		<label>源素陨星</label>
+		<label>Elemental Meteorite</label>
 		<aiCanUse>true</aiCanUse>
-		<description>生成若干注入源素的秘灵陨星，进行饱和式打击。</description>
+		<description>Generate several Arcane Spirit Meteorites infused with elemental essence to deliver a saturation strike.</description>
 		<iconPath>Icon/Abilities/MihoStarfall</iconPath>
 		<writeCombatLog>True</writeCombatLog>
 		<groupDef>Miho_OriginStarfall</groupDef>
