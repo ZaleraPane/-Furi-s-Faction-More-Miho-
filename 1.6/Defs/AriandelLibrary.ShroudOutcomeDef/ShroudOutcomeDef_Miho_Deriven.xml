@@ -21,7 +21,7 @@
         <shouldBeRegistered>true</shouldBeRegistered>
         
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>Oh，看呐是我们可爱的德里芬小姐。</pawnDescription>
+        <pawnDescription>Oh, look, it’s our adorable Miss Deriven.</pawnDescription>
         
         <fireAfterTicks>0</fireAfterTicks>
       </li>
