@@ -19,7 +19,7 @@
         <probability>1</probability>
         <independentProbability>true</independentProbability>
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>一名符漓平民加入。</pawnDescription>
+        <pawnDescription>A commoner from Fuli joins.</pawnDescription>
         <fireAfterTicks>0</fireAfterTicks>
       </li>
       <li>
@@ -27,7 +27,7 @@
         <probability>0.1</probability>
         <independentProbability>true</independentProbability>
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>一名符漓巫女加入。</pawnDescription>
+        <pawnDescription>A Fuli shamaness joins.</pawnDescription>
         <fireAfterTicks>0</fireAfterTicks>
       </li>
       <li>
@@ -35,7 +35,7 @@
         <probability>0.4</probability>
         <independentProbability>true</independentProbability>
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>一名符漓民兵加入。</pawnDescription>
+        <pawnDescription>A Fuli militia member joins.</pawnDescription>
         <fireAfterTicks>0</fireAfterTicks>
       </li>
       <li>
@@ -43,7 +43,7 @@
         <probability>0.1</probability>
         <independentProbability>true</independentProbability>
         <spawnRule>Colonist</spawnRule>
-        <pawnDescription>一名符漓军卒加入。</pawnDescription>
+        <pawnDescription>A Fu Li soldier joined.</pawnDescription>
         <fireAfterTicks>0</fireAfterTicks>
       </li>
     </pawnList>
@@ -54,7 +54,7 @@
         <probability>0.2</probability>
         <independentProbability>true</independentProbability>
         <spawnRule>TradeSpot</spawnRule>
-        <thingDescription>似乎有什么别的东西。</thingDescription>
+        <thingDescription>There seems to be something else.</thingDescription>
         <fireAfterTicks>0</fireAfterTicks>
       </li>
       <li>
@@ -63,7 +63,7 @@
         <probability>0.2</probability>
         <independentProbability>true</independentProbability>
         <spawnRule>TradeSpot</spawnRule>
-        <thingDescription>似乎有什么别的东西。</thingDescription>
+        <thingDescription>There seems to be something else.</thingDescription>
         <fireAfterTicks>0</fireAfterTicks>
       </li>
     </thingList>
