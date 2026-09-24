@@ -4,9 +4,9 @@
 	<!-- Akii  -->
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryChild_Akii_Tag</defName>
-		<title>美狐 异界来客</title>
-		<titleShort>异界来客</titleShort>
-		<description>[PAWN_nameDef]出生于异世界的氷玥，从小受到良好的教育。</description>
+		<title>Akii Otherworld Visitor</title>
+		<titleShort>Otherworld Visitor</titleShort>
+		<description>[PAWN_nameDef] was born in the otherworldly Ice Moon and received a good education from childhood.</description>
 		<slot>Childhood</slot>
 		<skillGains>
 			<Shooting>8</Shooting>
@@ -26,9 +26,9 @@
 
 	<AlienRace.AlienBackstoryDef>
 		<defName>Miho_BackstoryAdult_Akii_Tag</defName>
-		<title>美狐 交流特使</title>
-		<titleShort>交流特使</titleShort>
-		<description>[PAWN_nameDef]凭借出色的能力晋升为氷玥“仙狐”舰群的一名文职少将，并受命作为氷玥的使者来到神殿。</description>
+		<title>Akii Diplomatic Envoy</title>
+		<titleShort>Diplomatic Envoy</titleShort>
+		<description>[PAWN_nameDef] rose to prominence through exceptional ability and became a junior lieutenant general in the Ice Moon's “Senko” fleet, then was sent as the envoy of Ice Moon to the temple.</description>
 		<slot>Adulthood</slot>
 		<skillGains>
 			<Shooting>4</Shooting>
