@@ -3,7 +3,7 @@
   <!-- 符漓的角色 -->
   <AriandelLibrary.SpecialPawnTabDef>
     <defName>FR_Character_Tab</defName>
-    <label>符漓的角色</label> 
+    <label>Fu Li's role</label> 
     <order>10</order>
   </AriandelLibrary.SpecialPawnTabDef>
 
